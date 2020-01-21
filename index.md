@@ -1,6 +1,8 @@
 ## Jiayang Cheng
 
-Hi there, I am currently a junior student at Fudan University, Shanghai, China.
+Hi there, I am a junior student at Fudan University, majoring in Data Science.  
+
+
 
 ### Markdown
 
