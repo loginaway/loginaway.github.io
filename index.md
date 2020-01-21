@@ -1,37 +1,19 @@
 ## Jiayang Cheng
 
-Hi there, I am a junior student at Fudan University, majoring in Data Science, supervised by Prof. Deqing Yang. 
+Hi there, I am a junior student at Fudan University, majoring in Data Science, supervised by Prof. Deqing Yang. I am planning to graduate in June 2021. Please feel free to contact me by email.
+
+### Research Interests
+
+My research interests include Natural Language Processing and Data Mining. Specifically, my experiences focus on relation extraction and text classification tasks.
+
+### Education
+
+- Sep 2017 - July 2018, Natural Science major, Fudan University
+- Sep 2018 - July 2021 (expected), Bachelor of Science in Data Science major, Fudan University
+
+### Contact Me
+
+- Email: loginaway@gmail.com, 17307110242@fudan.edu.cn
+- Github: https://github.com/loginaway
 
 
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/loginaway/JiayangCheng.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
