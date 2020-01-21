@@ -1,6 +1,6 @@
 ## Jiayang Cheng
 
-Hi there, I am a junior student at Fudan University, majoring in Data Science.  
+Hi there, I am a junior student at Fudan University, majoring in Data Science, supervised by Prof. Deqing Yang. 
 
 
 
