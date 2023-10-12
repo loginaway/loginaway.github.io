@@ -11,9 +11,9 @@
     <link href="LICENSE" rel="license">
 
     <meta content="Jiayang Cheng" property="og:site_name"/>
-    <meta content="Here is no more than a sultan of swing." property="og:description">
+    <meta content="" property="og:description">
     <meta content="https://loginaway.github.io/about/" property="article:author">
-    <meta name="Description" content="Here is no more than a sultan of swing."><meta content="website" property="og:type">
+    <meta name="Description" content=""><meta content="website" property="og:type">
         <meta content="https://loginaway.github.io/autocomplete.txt" property="og:url"><title>Jiayang Cheng
         </title>
 
@@ -101,26 +101,7 @@
             
         </div>  
 
-        <!-- 描述框 + link -->
-        <!-- <div class="profile">
-            <div style="display:inline-block"><img class="mb-3 img-fluid z-depth-1 rounded" width='200' src="https://media.licdn.com/dms/image/C4D03AQFZGcnYTugGNw/profile-displayphoto-shrink_800_800/0/1656670138207?e=2147483647&v=beta&t=NvXZII1TIUFjKnjTdCQfJ76qrvHLQlj__3wowC13cks" height="100" alt="Photo of Jiayang Cheng"></div>
-            <div style="display:inline-block">
 
-                <div class=" userdesc">
-                    <p>Here is no more than a sultan of swing.</p>
-                </div>
-                <div class="link-to-notes text-right">
-                    <i class="fas fa-link"></i>
-                    <a href="/notes">https://enjoyment-work.netlify.app/notes</a>
-                </div>
-            </div>
-        </div> -->
-
-
-
-        <style>
-            
-        </style>
         <div>
             <div class="float-left">
                 <figure style="width:200px;margin-right:50px;"">
@@ -138,18 +119,12 @@
                 <p>My research interest is to ignite war between A and B using the state-of-the-art beam generator type X.</p>
             </div>
                 
-                <!-- <a>
-                I enjoy exploring colors, shapes, structures in both physical and virtual worlds (and in their intersection).
-                Check my <a href="./cv.pdf">resume</a> for more information.
-                </a> -->
-                    <!-- <div class="spacer"></div>
-                    <span class="profile-social-box">
-                    <a class="profile-social" style="text-decoration: none;" href="https://github.com/desmondlzy"><i class="fab fa-github"></i> github/desmondlzy</a>
-                    <a class="profile-social" style="text-decoration: none;" href="https://linkedin.com/in/desmondlzy"><i class="fab fa-linkedin-in"></i> linkedin/desmondlzy</a>
-                    <a class="profile-social" style="text-decoration: none;"><i class="fas fa-envelope"></i> zhenyuan.liu@epfl.ch</a>
-                    </span> -->
-            <!-- </div> -->
         </div>
+
+        <!-- <div class="float-left">
+            <p style="text-decoration: italic;">News:</p>
+            
+        </div> -->
     </div><div class="mt-3" id="breadcrumbs">
     
     <i class="fas fa-arrow-left"></i>
@@ -167,7 +142,7 @@
 
                     <div id="content"><article class="post">
     
-    <div class="post-content"><!-- Parse internal links, external links, transclusions, etc. and manipulate the content to reflect it accordingly --><div class="content">A Comprehensive Guide to Self-Learning;A Glorious Example Post;Markdown Syntax Preview;Getting Unstuck for Creatives;6 Ways to Achieve New Things;Creating a Contingency Plan;My Writing Process;Disrupting the Attention-based Economy;The Duality of Purpose and Work;(Sample Essay) Informational Hazard - Thinking Before Consuming;Introduction to Enjoyment work;Exploring the features of Enjoyment work;How-To Setup Enjoyment work;How to use Enjoyment work features on your website;Example Page to View Markdown Rendering;Comparison based on accomplishment does not have a baseline;Cultural artefacts to improve the resonance and life expectancy of your writing;Dark theme adoption as a function of cognitive exhaustion;Epistemic humility to avoid unintended ontological dust while writing;Humility is the knowing that you don&#39;t know a lot of things not a false pretension to deceive people into praising you.;Everyone should have a project that they control 100% of;Reading with fractalized mental pattern;Reading the material to completion over interest-based pickups-n-drops;Serendipity-based outlook as a driver for large-scale personal projects;Just another arxiv of the ideas;
+    <div class="post-content"><!-- Parse internal links, external links, transclusions, etc. and manipulate the content to reflect it accordingly --><div class="content">Comparison based on accomplishment does not have a baseline;
 </div></div>
 </article></div>
                 </div>
@@ -193,43 +168,38 @@
 
 
         <!-- 分类按钮 -->
-        <div class="main-site-subheader menu disable-select text-center">
+        <div class="main-site-subheader menu disable-select" style="display:inline">
             <div class="about">
                 <a " href="/about">
-                    <i class=" fas fa-signature"></i>
                     About
                 </a>
             </div>
             <div class="posts">
                 <a " href="/posts">
-                    <i class="fas fa-flag"></i>
                     Blog Posts
                 </a>
             </div>
             <div class="hashtags">
                 <a " href="/tags">
-                    <i class=" fas fa-hashtag"></i>
                     Tags
                 </a>
             </div>
             <div class="categories">
                 <a " href="/categories">
-                    <i class=" far fa-folder-open"></i>
                     Categories
                 </a>
             </div>
             <div class="archive">
                 <a " href="/archive">
-                    <i class=" fas fa-archive"></i>
                     Archive
                 </a>
             </div>
         </div>
 
         <!-- 搜索框 -->
-        <div class="searchbar search-container sans">
+        <div class="searchbar search-container sans" style="max-width: 400px; display:inline-block;">
             <i aria-hidden="true" class="fa fa-search"></i>
-            <input autocomplete="off" id="search-input" oninput="changeResultContainerDisp(this.value)" placeholder="Search My Posts..." type="text"/>
+            <input autocomplete="off" id="search-input" oninput="changeResultContainerDisp(this.value)" placeholder="Search My Posts" type="text"/>
             <label for="search-input"></label>
             <ul id="results-container"></ul>
         </div>

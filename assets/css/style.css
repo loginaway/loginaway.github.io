@@ -1222,25 +1222,20 @@ figure img {
 }
 
 #footer {
-  font-family: "Lucida Console", Monaco, monospace !important;
-  font-weight: 600;
+  font-family: 'Linux Biolinum O', sans-serif !important;
+  /* font-weight: 100; */
   word-spacing: -3px;
-  background: #333;
-  color: #eee;
-}
-
-#footer h2 {
-  font-size: 22px;
-  color: #fff;
+  background: #989898;
+  color: #000000;
 }
 
 #footer a {
   font-weight: normal;
-  color: #ccc;
+  color: #000000;
 }
 
 #footer a:hover {
-  color: #777;
+  color: #000000;
 }
 
 #tag-grid {
