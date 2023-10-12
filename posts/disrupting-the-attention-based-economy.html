@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HEAD -->
+
+<head>
+    <!-- More information: https://htmlhead.dev/ -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Jekyll" name="generator">
+    <link href="LICENSE" rel="license">
+
+    <meta content="Enjoyment Work" property="og:site_name"/>
+    <meta content="A Digital Garden: Capturing my daily thoughts and progress, as well as curated ideas with unique synthesis—a personal zettelkasten." property="og:description">
+    <meta content="https://enjoyment-work.netlify.app//about/" property="article:author">
+    <meta name="Description" content="A Digital Garden: Capturing my daily thoughts and progress, as well as curated ideas with unique synthesis—a personal zettelkasten."><meta content="Disrupting the Attention-based Economy" property="og:title">
+        <meta content="article" property="og:type">
+        <meta content="https://enjoyment-work.netlify.app//posts/disrupting-the-attention-based-economy" property="og:url"><title>Enjoyment Work
+        |
+            Disrupting the Attention-based Economy</title>
+
+        <meta name="application-name" content="Enjoyment Work">
+        <meta name="theme-color" content="white">
+        <link rel="archives" href="https://enjoyment-work.netlify.app//archives/">
+
+        <meta content="index,follow" name="robots"><!-- All Search Engines -->
+        <meta content="index,follow" name="googlebot"><!-- Google Specific -->
+        
+            <!-- Font Awesome 5 -->
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/e9dddf84a6.js"></script>
+
+        <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16"/>
+        <link rel="canonical" href="https://enjoyment-work.netlify.app//posts/disrupting-the-attention-based-economy">
+        <link rel="apple-touch-icon" href="https://brennanbrown.ca/img/avatar.jpg">
+
+        <!-- Bootstrap core CSS -->
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
+        <!-- CSS -->
+        <link class="default" href="/assets/css/style.css" media="all" rel="stylesheet"/>
+
+        <!--[if IE]>
+        <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+        <![endif]-->
+            <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+        <link rel="alternate" type="application/rss+xml" href="https://enjoyment-work.netlify.app//feed.xml">
+    </head
+</head>
+
+    <body>
+        <a class="skip-main" href="#content">Skip to main content</a>
+        <!-- MAIN CONTENT -->
+        <main class="flex-shrink-0" role="main">
+            <div class="row justify-content-center pb-3">
+                <div class="col-md-7 col-sm-12">
+                    <!-- HEADER -->
+<header class="mb-4">
+    <div class="dashboard disable-select">
+        <div class="mb-2 text-center">
+            <h1 class="p-2 mt-2" id="site-header">
+                <a href="/">Enjoyment Work</a>
+                <br class="d-md-none d-block">
+                <small>
+                     — a Digital Garden 🌱
+                </small>
+            </h1>
+        </div>
+        <div class="userboard profile-board-col">
+            <div class="username">
+                <span>
+                    <a " href="/about">Brennan Kenneth Brown</a>
+                </span>
+            </div>
+            <div class=" userdesc">
+                <p>A Digital Garden: Capturing my daily thoughts and progress, as well as curated ideas with unique synthesis—a personal zettelkasten.</p>
+            </div>
+            <div class="link-to-notes text-right">
+                <i class="fas fa-link"></i>
+                <a href="/notes">https://enjoyment-work.netlify.app/notes</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-site-subheader menu disable-select text-center">
+        <div class="about">
+            <a " href="/about">
+                <i class=" fas fa-signature"></i>
+                About
+            </a>
+        </div>
+        <div class="hashtags">
+            <a " href="/tags">
+                <i class=" fas fa-hashtag"></i>
+                Tags
+            </a>
+        </div>
+        <div class="categories">
+            <a " href="/categories">
+                <i class=" far fa-folder-open"></i>
+                Categories
+            </a>
+        </div>
+        <div class="archive">
+            <a " href="/archive">
+                <i class=" fas fa-archive"></i>
+                Archive
+            </a>
+        </div>
+        <div class="rss">
+            <a " href="/feed.xml">
+                <i class=" fas fa-rss"></i>
+                RSS
+            </a>
+        </div>
+        <div class="donate">
+            <a href="https://ko-fi.com/brennanbrown" ">
+                <i class=" fas fa-dollar-sign"></i>
+                Donate
+            </a>
+        </div>
+    </div>
+    <div class="searchbar search-container sans">
+        <i aria-hidden="true" class="fa fa-search"></i>
+        <input autocomplete="off" id="search-input" oninput="changeResultContainerDisp(this.value)" placeholder="Search Enjoyment Work..." type="text"/>
+        <label for="search-input"></label>
+        <ul id="results-container"></ul>
+    </div>
+    <script src="/assets/js/simple-jekyll-search.min.js"></script>
+    <script>
+        function changeResultContainerDisp(val) {
+            if (val) {
+                document.getElementById("results-container").style.display = "block";
+                document.getElementById("search-input").addEventListener('blur', function () {
+                    document.addEventListener('click', function (event) {
+                        var isClickInside = document.getElementById("results-container").contains(event
+                            .target);
+                        if (!isClickInside) {
+                            document.getElementById("results-container").style.display = "none";
+                        }
+                    })
+                })
+            } else {
+                document.getElementById("results-container").style.display = "none";
+            }
+        }
+        var sjs = SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: '/search.json',
+            searchResultTemplate: '<li class="search_res" style="list-style: none;"><a href="https://enjoyment-work.netlify.app/{url}" color: #555555;"><p><strong>></strong> {title}</p></a></li>',
+            noResultsText: 'No results found. Try another search.',
+            fuzzy: false,
+            limit: 5
+        })
+    </script><div class="mt-3" id="breadcrumbs">
+    
+    <i class="fas fa-arrow-left"></i>
+    <a href="/">Home</a>
+    
+        
+            /
+            <a href="/posts/">Posts</a>
+        
+    
+        
+            /
+            Disrupting the Attention-based Economy
+        
+    
+</div></header>
+                    
+                    <div id="content"><article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+    <h1>Disrupting the Attention-based Economy</h1><!-- Parse internal links, external links, transclusions, etc. and manipulate the content to reflect it accordingly --><ul class="tags"><li>
+            <strong>
+                <a class="post-metadata" href="/dates/#26-October-2020">Monday, October 26, 2020</a>
+            </strong>
+        </li>
+        <!-- Loop through page categories and print them in tags --><li>
+                <a class="tag" href="/tags/#Productivity">#Productivity</a>
+            </li><li>
+                <a class="tag" href="/tags/#Habits">#Habits</a>
+            </li></ul><div class="toc mb-5" id="toc">
+    <div id="toctitle">
+        <h2>Table of Contents:</h2>
+    </div>
+    <ul id="toc" class="section-nav">
+<li class="entry toc-h2"><a href="#stop-being-easily-swayed-by-anything-thats-in-front-of-you-start-living-a-value-based-lifestyle">Stop being easily swayed by anything that’s in front of you. Start living a value-based lifestyle.</a></li>
+</ul>
+</div><div class="content"><p>When you wake up in the morning and get out of bed — or even before you get out of bed — what’s the first thing that grabs your attention? Whatever it is, it’s going to be responsible for your first thoughts of the day. Throughout the rest of your day, you’ll be faced with a bombardment of distractions that will grab your awareness away from what you’re doing.</p>
+
+<p>We live in an <a href="https://techcrunch.com/2017/07/30/the-attention-economy-created-by-silicon-valley-is-bankrupting-us/" target="_blank" rel="noopener noreferrer"><strong>attention-based economy</strong></a>. Companies and people can only sell you products and services if they first have your attention, after all. This is nothing new, but with the rise of clever marketing statics (ex. Data-collection, branded content, personalized advertisements, etc.) most people are often being sold things without even realizing it.</p>
+
+<figure class="wp-caption">
+
+<img data-width="1024" data-height="768" src="https://cdn-images-1.medium.com/max/2560/1*wm509xrohy46UG3caEwsWQ.png" /> <figcaption class="wp-caption-text"><b>New Office</b> | <a href="https://www.flickr.com/photos/philliecasablanca/3344142642" target="_blank" rel="noopener noreferrer">Source</a></figcaption></figure>
+
+<figure>
+
+<img data-width="4000" data-height="250" src="https://cdn-images-1.medium.com/max/800/1*75f3FyFy5_WnAC4joYEXJQ.png" />  
+</figure>
+
+<h2 id="stop-being-easily-swayed-by-anything-thats-in-front-of-you-start-living-a-value-based-lifestyle">Stop being easily swayed by anything that’s in front of you. Start living a value-based lifestyle.</h2>
+
+<figure>
+
+<img data-width="1400" data-height="62" src="https://cdn-images-1.medium.com/max/800/1*A1HXExeRru-asgR6_gN4Sw.png" />  
+</figure>
+
+<p>By way of technology, there have been <a href="https://www.privacytools.io/" target="_blank" rel="noopener noreferrer">privacy tools and blockers</a> created as a way to negate these tactics. However, this is a band-aid solution to a deeper, fundamental problem of society.</p>
+
+<p>This goes beyond the exploits of current revenue models. People easily get caught up paying attention to things that just drain them of their energy. Time and energy wasted on toxicity — reaction instead of action. It is easy to blame advancements in technology and platforms for this, but the uncomfortable truth is that it is a human problem.</p>
+
+<p>There is little we are able to control in life. We cannot control the behavior or actions of others — and we cannot control what’s going to be in today’s news — but we can control ourselves.</p>
+
+<p>If attention is the currency of our modern economy, then our pockets are full at the start of each day. Absolutely nobody can dictate what you spend your time thinking about — no matter how hard they try. Bringing power back to the consumer, then, is simple. The solution is to stop consuming.</p>
+
+<p>This is, of course, far easier said than done. There is a heavy weight of responsibility on our collective shoulders — but it is not an impossible burden to lift. The ability to overhaul this system will come from forming a meritocratic community. To begin our dialogue and actions on the basis of a value-based philosophy instead of an attention-based one.</p>
+
+<p>What does this mean, exactly? Start with the fundamentals — what do you value in life? <a href="https://www.success.com/article/how-to-write-your-personal-mission-statement" target="_blank" rel="noopener noreferrer">What is your self-imposed purpose?</a> These are not easy questions to answer, but again, they’re not impossible. Often times, exactly because of the everyday distractions and white noise that nags at us, we find ourselves too busy to stop and think about these kinds of questions.</p>
+
+<p>Contrary to what you might think, things become far simpler when you truly know what you want out of life and yourself. When you raise your expectations and cut out everything that isn’t actually necessary for you to be happy.</p>
+
+<p>Forge an identity for yourself out of your passion and who you want to become. Use your attention for good — learn new things, create something, help your community, spend time relaxing by doing things you truly love to do instead of mindlessly scrolling through the Internet for a lukewarm buzz.</p>
+
+<figure>
+
+<img data-width="1200" data-height="600" src="https://cdn-images-1.medium.com/max/1200/1*0rrraKR-9n9PmtrtsDemYg.png" />  
+</figure>
+
+<p>There is beauty in getting used to the uncomfortable. People <a href="https://www.theguardian.com/media/2017/feb/02/amusing-ourselves-to-death-neil-postman-trump-orwell-huxley" target="_blank" rel="noopener noreferrer">constantly search out entertainment</a> simply because we’ve become so unused to <a href="https://www.npr.org/sections/alltechconsidered/2015/01/12/376717870/bored-and-brilliant-a-challenge-to-disconnect-from-your-phone" target="_blank" rel="noopener noreferrer">boredom and being bored</a>. The modern mind is restless and uneasy — always looking for a distraction — and this is explicitly why the attention-based economy has been able to do so well.</p>
+
+<p>In all honesty, this approach to life is far more difficult. The human brain is designed to sleepwalk into habits and routines and to tread the path of least resistance. Mindfulness needs to be developed, as well as gratitude — we’re conditioned to think we don’t have enough and need to seek out more — even though we most often <a href="https://markmanson.net/everything-you-need" target="_blank" rel="noopener noreferrer">already have everything that we need</a>.</p>
+
+<p>With the sheer pace of advancement in technology and the changing tides of the world at large, nothing comes close to being predictable anymore. It’s honestly a scary thought to think of the path we’re headed down if people continue to allow themselves to be easily swayed and dependent on entertainment. A serious and long pause needs to be taken. By everybody.</p>
+
+<figure class="wp-caption">
+
+<img data-width="2400" data-height="1800" src="https://cdn-images-1.medium.com/max/800/1*pRon9UAtEO-JzTY-7mg1jA.png" /><figcaption class="wp-caption-text"><b>Thanks for Reading!</b></figcaption></figure>
+
+</div><div class="row" id="author">
+        <div class="col-xl-3 col-12">
+            <img src="https://brennanbrown.ca/img/avatar.jpg" class="img-thumbnail d-block mx-auto"/>
+        </div>
+        <div class="col-xl-9 col-12" id="author-text">
+            <h2 class="text-lg-left text-center">
+                About
+                Brennan Kenneth Brown
+            </h2>
+            <p>
+                Hey there! My name is Brennan, I'm a 27-year-old Métis web developer and content strategist from Winnipeg, Manitoba and currently reside in Calgary, Alberta. I've recently compeleted a Full Stack Developer Program at EvolveU, and I'm looking to help those that need web development work done, or searching for ideas and management for their next content project.
+            </p>
+        </div>
+    </div><!-- BACKLINKS --><!-- RELATED POSTS --><div class="related" id="jekyll-seamless-relatedposts">
+            <h2>Related Posts</h2>
+            <div class="related-wrapper"><div class="related-group">
+                            <a href="/posts/a-comprehensive-guide-to-self-learning">
+                                <p class="related-title">A Comprehensive Guide to Self-Learning</p>
+                                <p class="related-excerpt">One of the most effective methods to understanding the materials that you’re studying is to be passionate about them. This is the beauty ...</p>
+                            </a>
+                        </div><div class="related-group">
+                            <a href="/posts/getting-unstuck">
+                                <p class="related-title">Getting Unstuck for Creatives</p>
+                                <p class="related-excerpt">Taking a novel approach to life and breaking routines.
+
+Okay, let's be real. I've found myself totally trapped in the habitual daily acts...</p>
+                            </a>
+                        </div><div class="related-group">
+                            <a href="/posts/six-ways-to-achieve-new-things">
+                                <p class="related-title">6 Ways to Achieve New Things</p>
+                                <p class="related-excerpt">
+  Getting back on your horse, no matter how many times you’ve fallen off.
+
+
+Project Journal Bar
+
+In my last post, I talked about the str...</p>
+                            </a>
+                        </div><div class="related-group">
+                            <a href="/posts/creating-a-contingency-plan">
+                                <p class="related-title">Creating a Contingency Plan</p>
+                                <p class="related-excerpt">Failure is Important
+
+Last month, I had the idea to write an article each day for the month. How long did that last? Only five days. No m...</p>
+                            </a>
+                        </div><div class="related-group">
+                            <a href="/posts/my-writing-process">
+                                <p class="related-title">My Writing Process</p>
+                                <p class="related-excerpt">Five Steps to Go From Brainstorming to Completed Work
+
+Let’s get down to the bare bones to start with: Prepare yourself and focus. Brains...</p>
+                            </a>
+                        </div></div>
+            <br/>
+        </div></article></div>
+                </div>
+            </div>
+                <button class="scroll-to-top" id="scroll-to-top">
+                    UP <i class="fa fa-chevron-up"></i>
+                </button>
+            </div>
+        </main>
+        <!-- FOOTER -->
+<footer class="page-footer font-small blue" id="footer">
+    <div class="container-fluid text-sm-left">
+        <div class="row">
+            <div class="col-sm-6 mt-sm-0 my-3">
+                <h2 class="text-uppercase text-center">About
+                    Enjoyment Work</h2>
+                <p class="text-justify text-white mx-3">
+                    <small>The phrase "digital garden" is a metaphor for thinking about writing and creating that focuses less on the resulting "showpiece" and more on the process, care, and craft it takes to get there. While not everybody has or works in a dirt garden, we all share a familiarity with the idea of what a garden is.</small>
+                </p>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-1">
+                <h2 class="text-uppercase">Directory</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/home">
+                            <i class="fas fa-home"></i>
+                            Home Page</a>
+                    </li>
+                    <li>
+                        <a href="/about">
+                            <i class="fas fa-signature"></i>
+                            About</a>
+                    </li>
+                    <li>
+                        <a href="/posts">
+                            <i class="fas fa-flag"></i>
+                            Blog Posts</a>
+                    </li>
+                    <li>
+                        <a href="/feeds">
+                            <i class="fas fa-rss-square"></i>
+                            RSS Feeds</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-1">
+                <h2 class="text-uppercase">Other Places</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://github.com/brennanbrown">
+                            <i class="fab fa-github"></i>
+                            GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/brennankbrown">
+                            <i class="fab fa-twitter"></i>
+                            Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://brennanbrown.ca">
+                            <i class="fas fa-briefcase"></i>
+                            Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="mailto:mail@brennanbrown.ca">
+                            <i class="fas fa-envelope"></i>
+                            E-mail</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center py-1 px-5">
+        Source Code licensed
+        <a href="https://github.com/brennanbrown/enjoyment-work/blob/master/LICENSE">MIT</a>
+        2023.
+        <br/>
+        Website content licensed
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+        |
+        <a href="https://github.com/brennanbrown/enjoyment-work">
+            View Source Code
+        </a>
+
+    </div>
+</footer>
+
+        <!-- SCRIPTS -->
+<script>
+  document
+    .getElementById("scroll-to-top")
+    .addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    });
+</script>
+
+<script type="text/javascript">
+    window.MathJax = {
+        tex: {
+            packages: ["base", "ams"]
+        },
+        loader: {
+            load: ["ui/menu", "[tex]/ams"]
+        }
+    };
+</script>
+
+<script async id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" type="text/javascript"></script>
+
+    </body>
+</html>

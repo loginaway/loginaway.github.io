@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HEAD -->
+
+<head>
+    <!-- More information: https://htmlhead.dev/ -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Jekyll" name="generator">
+    <link href="LICENSE" rel="license">
+
+    <meta content="Enjoyment Work" property="og:site_name"/>
+    <meta content="A Digital Garden: Capturing my daily thoughts and progress, as well as curated ideas with unique synthesis—a personal zettelkasten." property="og:description">
+    <meta content="https://enjoyment-work.netlify.app//about/" property="article:author">
+    <meta name="Description" content="A Digital Garden: Capturing my daily thoughts and progress, as well as curated ideas with unique synthesis—a personal zettelkasten."><meta content="(Sample Essay) Informational Hazard - Thinking Before Consuming" property="og:title">
+        <meta content="article" property="og:type">
+        <meta content="https://enjoyment-work.netlify.app//posts/informational-hazard-thinking-before-consuming" property="og:url"><title>Enjoyment Work
+        |
+            (Sample Essay) Informational Hazard - Thinking Before Consuming</title>
+
+        <meta name="application-name" content="Enjoyment Work">
+        <meta name="theme-color" content="white">
+        <link rel="archives" href="https://enjoyment-work.netlify.app//archives/">
+
+        <meta content="index,follow" name="robots"><!-- All Search Engines -->
+        <meta content="index,follow" name="googlebot"><!-- Google Specific -->
+        
+            <!-- Font Awesome 5 -->
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/e9dddf84a6.js"></script>
+
+        <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16"/>
+        <link rel="canonical" href="https://enjoyment-work.netlify.app//posts/informational-hazard-thinking-before-consuming">
+        <link rel="apple-touch-icon" href="https://brennanbrown.ca/img/avatar.jpg">
+
+        <!-- Bootstrap core CSS -->
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
+        <!-- CSS -->
+        <link class="default" href="/assets/css/style.css" media="all" rel="stylesheet"/>
+
+        <!--[if IE]>
+        <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+        <![endif]-->
+            <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+        <link rel="alternate" type="application/rss+xml" href="https://enjoyment-work.netlify.app//feed.xml">
+    </head
+</head>
+
+    <body>
+        <a class="skip-main" href="#content">Skip to main content</a>
+        <!-- MAIN CONTENT -->
+        <main class="flex-shrink-0" role="main">
+            <div class="row justify-content-center pb-3">
+                <div class="col-md-7 col-sm-12">
+                    <!-- HEADER -->
+<header class="mb-4">
+    <div class="dashboard disable-select">
+        <div class="mb-2 text-center">
+            <h1 class="p-2 mt-2" id="site-header">
+                <a href="/">Enjoyment Work</a>
+                <br class="d-md-none d-block">
+                <small>
+                     — a Digital Garden 🌱
+                </small>
+            </h1>
+        </div>
+        <div class="userboard profile-board-col">
+            <div class="username">
+                <span>
+                    <a " href="/about">Brennan Kenneth Brown</a>
+                </span>
+            </div>
+            <div class=" userdesc">
+                <p>A Digital Garden: Capturing my daily thoughts and progress, as well as curated ideas with unique synthesis—a personal zettelkasten.</p>
+            </div>
+            <div class="link-to-notes text-right">
+                <i class="fas fa-link"></i>
+                <a href="/notes">https://enjoyment-work.netlify.app/notes</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-site-subheader menu disable-select text-center">
+        <div class="about">
+            <a " href="/about">
+                <i class=" fas fa-signature"></i>
+                About
+            </a>
+        </div>
+        <div class="hashtags">
+            <a " href="/tags">
+                <i class=" fas fa-hashtag"></i>
+                Tags
+            </a>
+        </div>
+        <div class="categories">
+            <a " href="/categories">
+                <i class=" far fa-folder-open"></i>
+                Categories
+            </a>
+        </div>
+        <div class="archive">
+            <a " href="/archive">
+                <i class=" fas fa-archive"></i>
+                Archive
+            </a>
+        </div>
+        <div class="rss">
+            <a " href="/feed.xml">
+                <i class=" fas fa-rss"></i>
+                RSS
+            </a>
+        </div>
+        <div class="donate">
+            <a href="https://ko-fi.com/brennanbrown" ">
+                <i class=" fas fa-dollar-sign"></i>
+                Donate
+            </a>
+        </div>
+    </div>
+    <div class="searchbar search-container sans">
+        <i aria-hidden="true" class="fa fa-search"></i>
+        <input autocomplete="off" id="search-input" oninput="changeResultContainerDisp(this.value)" placeholder="Search Enjoyment Work..." type="text"/>
+        <label for="search-input"></label>
+        <ul id="results-container"></ul>
+    </div>
+    <script src="/assets/js/simple-jekyll-search.min.js"></script>
+    <script>
+        function changeResultContainerDisp(val) {
+            if (val) {
+                document.getElementById("results-container").style.display = "block";
+                document.getElementById("search-input").addEventListener('blur', function () {
+                    document.addEventListener('click', function (event) {
+                        var isClickInside = document.getElementById("results-container").contains(event
+                            .target);
+                        if (!isClickInside) {
+                            document.getElementById("results-container").style.display = "none";
+                        }
+                    })
+                })
+            } else {
+                document.getElementById("results-container").style.display = "none";
+            }
+        }
+        var sjs = SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: '/search.json',
+            searchResultTemplate: '<li class="search_res" style="list-style: none;"><a href="https://enjoyment-work.netlify.app/{url}" color: #555555;"><p><strong>></strong> {title}</p></a></li>',
+            noResultsText: 'No results found. Try another search.',
+            fuzzy: false,
+            limit: 5
+        })
+    </script><div class="mt-3" id="breadcrumbs">
+    
+    <i class="fas fa-arrow-left"></i>
+    <a href="/">Home</a>
+    
+        
+            /
+            <a href="/posts/">Posts</a>
+        
+    
+        
+            /
+            (Sample Essay) Informational Hazard - Thinking Before Consuming
+        
+    
+</div></header>
+                    
+                    <div id="content"><article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+    <h1>(Sample Essay) Informational Hazard - Thinking Before Consuming</h1><!-- Parse internal links, external links, transclusions, etc. and manipulate the content to reflect it accordingly --><ul class="tags"><li>
+            <strong>
+                <a class="post-metadata" href="/dates/#01-June-2020">Monday, June 1, 2020</a>
+            </strong>
+        </li>
+        <!-- Loop through page categories and print them in tags --><li>
+                <a class="tag" href="/tags/#Practical">#Practical</a>
+            </li></ul><div class="toc mb-5" id="toc">
+    <div id="toctitle">
+        <h2>Table of Contents:</h2>
+    </div>
+    <ul id="toc" class="section-nav">
+</ul>
+</div><div class="content"><p>Information is probably the single most addictive substance, even more so than heroin in it can give you the kick even before you have consumed it, let alone waiting for the system to digest it. And what is more interesting is, the quality and the content(in chemist-speak, the composition, and the dosage) that is required to stimulate an individual varies for each individual. For some, the effect kicks in at “keeping up with Kardashians”; for some, when reading editorials in the economist or the new yorker; and for some, reading self-help claptrap disguised as psychology and science. Whichever end of the spectrum you are in there is not much difference in the effect it has on you – all it does is, it consumes your senses.</p>
+
+<p>The problem is no one puts up a disclaimer about whether or not it is fit for you to consume. You have to figure it out yourself. And what is all the more disconcerting is the fact that in doing so none of us are aware of the toll it has taken on us. Consider a simple case of skimming through a newspaper(or an online news app if you are tech-savvy), how much do you retain at the end of it? So, at what point is the trade war between the US and China right now? Oh, and what is happening in the US open? Who is the current world champion in blitz-chess? What happened to the bridge that was going to be built in the who-cares where region? And then top it with some political and investment news, you have successfully deceived yourself into believing that you have hoarded all the information you could and retained nothing. I emphasize nothing!</p>
+
+<p>If you were to explain the article to someone say a couple days later, I bet all you could recall is the headline. This is the plight of pretty much everyone right now. The toll taken on our attention span due to this continuous influx of information outweighs most of the benefits of consuming it. You travel up the ladder in wealth and status this becomes far graver – you can see people competing for information, meaning, one might not like politics at all but they are now forced to hold an opinion on the president and the current affairs just to be able to contribute to verbal diarrhea to be a part of the social group and to keep up the ostensible progress.</p>
+
+<p>Now consider this, you read a New York Times piece on Venezuela’s economic collapse that states socialist policies as the primary reason, the high it can give you is indescribable, you suddenly are anti-“this” and pro-“something else”. If someone asked you your political views, you are now nothing more than a parrot regurgitating a New York Times piece as a reason for your anti-socialism stance. Okay, I am sorry I understand that citing only one article can show one in a bad light, so maybe a bunch of them?</p>
+
+<p><strong>Note</strong>: Before we go any further, I must clarify that anything that is not explicitly stated by me as my own view should not be extrapolated from the examples or the writing style.</p>
+
+<p>It is precisely because of this indolent nature of our brain that I ask you to be careful. At least in the case of occupational hazards, you are aware of the downsides, and when you do sign up you do it wittingly. But in the case of Informational Hazards, neither are we aware of the downsides nor did we sign up for it knowingly.</p>
+
+<p>Furthermore, the indispensable problem that is concomitant of free inflow of information is: <a href="https://en.wikipedia.org/wiki/Preference_falsification">preference falsification<sup ><i class="fa fa-wikipedia-w"></i>
+        </sup></a>. For reasons I don’t understand, it seems like the more the information you accumulate the more are you prone to hiding your true preferences. One theory I have is you think you have to be broad-minded at the expense of your natural instincts but what I don’t understand is how come such smart people who learn to be broad-minded do not understand the cascading effects of the palatable lie. How difficult is it to realize that this lie if prolonged could become the new truth. Is that what we want?</p>
+
+<p>Our brains have this funny little characteristic or I should say side-effect of generating biases; and when you provide them their favorite fodder a.k.a information, it not only triggers the center of knowledge, it switches on the neighboring center for bias generation too. One that I can instantly recall is that of our collective bias due to the exposure to apparent progress in terms of iPads and iPhones, all of us are made to think that the field of science and technology is evolving at a rapid pace but if you dig deeper there hasn’t been any fundamental breakthrough in the area of pure sciences since the late 1970s, which marked the invention of semiconductors. Eric Weinstein, mathematician and economist speaks about this in great detail in one of his <a href="https://www.youtube.com/watch?v=nM9f0W2KD5s">podcasts<sup ><i class="fa fa-youtube"></i></sup></a> on stagnation in science and technology with Peter Thiel. (Do check it out)</p>
+
+<p>It is not for me to tell what to read and what not to, but I what do know is, there is a mental threshold to what one can make sense of. I have spoken about this in detail in one of my previous essays on the <a href="https://raghuveer.net/posts/branching-effects-of-higher-order-thinking/">branching effects of higher-order thinking</a>. Sometimes, the mental fatigue is real, and in such cases, unnecessary consumption can have undesired effects. So the next time you read about how quantum computers use superposition to surpass conventional computers in representing bits and their states in a newspaper column or a blog post, please try to explain it your kids before you convince yourself of the apparently profound knowledge that you just acquired. Oh yeah, and please don’t draw any conclusions before you explain it to them.</p>
+
+<p>This is a subtle topic, and there are a million ways to look at it. From why it is really important in this day and age to be updated to how you might not satisfy all the system requirements for the update. To be honest, most of us do not have spec required to hold the information and use it. And there are no good developers around to fix the bugs i.e., the biases and mental fatigue. I think it is good to have your own guiding heuristic as to what do you want to consume and what you don’t. Pick your sources, moderate your intake, and always ponder on it before jumping to conclusions.</p>
+
+</div><div class="row" id="author">
+        <div class="col-xl-3 col-12">
+            <img src="https://brennanbrown.ca/img/avatar.jpg" class="img-thumbnail d-block mx-auto"/>
+        </div>
+        <div class="col-xl-9 col-12" id="author-text">
+            <h2 class="text-lg-left text-center">
+                About
+                Brennan Kenneth Brown
+            </h2>
+            <p>
+                Hey there! My name is Brennan, I'm a 27-year-old Métis web developer and content strategist from Winnipeg, Manitoba and currently reside in Calgary, Alberta. I've recently compeleted a Full Stack Developer Program at EvolveU, and I'm looking to help those that need web development work done, or searching for ideas and management for their next content project.
+            </p>
+        </div>
+    </div><!-- BACKLINKS --><div class="related" id="jekyll-seamless-backlinks">
+        <h2>Linked References</h2>
+        <div class="related-wrapper"><div class="related-group">
+                            <a href="/posts/Introduction-to-enjoyment-work">
+                                <p class="related-title">Introduction to Enjoyment work</p>
+                                <p class="related-excerpt">Enjoyment work is a highly functional jekyll-based theme that combines the best of different worlds (atleast tries to 😅). It is a minimal...</p>
+                            </a>
+                        </div></div>
+        <br/>
+    </div><!-- RELATED POSTS --></article></div>
+                </div>
+            </div>
+                <button class="scroll-to-top" id="scroll-to-top">
+                    UP <i class="fa fa-chevron-up"></i>
+                </button>
+            </div>
+        </main>
+        <!-- FOOTER -->
+<footer class="page-footer font-small blue" id="footer">
+    <div class="container-fluid text-sm-left">
+        <div class="row">
+            <div class="col-sm-6 mt-sm-0 my-3">
+                <h2 class="text-uppercase text-center">About
+                    Enjoyment Work</h2>
+                <p class="text-justify text-white mx-3">
+                    <small>The phrase "digital garden" is a metaphor for thinking about writing and creating that focuses less on the resulting "showpiece" and more on the process, care, and craft it takes to get there. While not everybody has or works in a dirt garden, we all share a familiarity with the idea of what a garden is.</small>
+                </p>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-1">
+                <h2 class="text-uppercase">Directory</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/home">
+                            <i class="fas fa-home"></i>
+                            Home Page</a>
+                    </li>
+                    <li>
+                        <a href="/about">
+                            <i class="fas fa-signature"></i>
+                            About</a>
+                    </li>
+                    <li>
+                        <a href="/posts">
+                            <i class="fas fa-flag"></i>
+                            Blog Posts</a>
+                    </li>
+                    <li>
+                        <a href="/feeds">
+                            <i class="fas fa-rss-square"></i>
+                            RSS Feeds</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-1">
+                <h2 class="text-uppercase">Other Places</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://github.com/brennanbrown">
+                            <i class="fab fa-github"></i>
+                            GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/brennankbrown">
+                            <i class="fab fa-twitter"></i>
+                            Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://brennanbrown.ca">
+                            <i class="fas fa-briefcase"></i>
+                            Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="mailto:mail@brennanbrown.ca">
+                            <i class="fas fa-envelope"></i>
+                            E-mail</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center py-1 px-5">
+        Source Code licensed
+        <a href="https://github.com/brennanbrown/enjoyment-work/blob/master/LICENSE">MIT</a>
+        2023.
+        <br/>
+        Website content licensed
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+        |
+        <a href="https://github.com/brennanbrown/enjoyment-work">
+            View Source Code
+        </a>
+
+    </div>
+</footer>
+
+        <!-- SCRIPTS -->
+<script>
+  document
+    .getElementById("scroll-to-top")
+    .addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    });
+</script>
+
+<script type="text/javascript">
+    window.MathJax = {
+        tex: {
+            packages: ["base", "ams"]
+        },
+        loader: {
+            load: ["ui/menu", "[tex]/ams"]
+        }
+    };
+</script>
+
+<script async id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" type="text/javascript"></script>
+
+    </body>
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HEAD -->
+
+<head>
+    <!-- More information: https://htmlhead.dev/ -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Jekyll" name="generator">
+    <link href="LICENSE" rel="license">
+
+    <meta content="Enjoyment Work" property="og:site_name"/>
+    <meta content="A Digital Garden: Capturing my daily thoughts and progress, as well as curated ideas with unique synthesis—a personal zettelkasten." property="og:description">
+    <meta content="https://enjoyment-work.netlify.app//about/" property="article:author">
+    <meta name="Description" content="A Digital Garden: Capturing my daily thoughts and progress, as well as curated ideas with unique synthesis—a personal zettelkasten."><meta content="Posts" property="og:title">
+        <meta content="article" property="og:type">
+        <meta content="https://enjoyment-work.netlify.app//posts" property="og:url"><title>Enjoyment Work
+        |
+            Posts</title>
+
+        <meta name="application-name" content="Enjoyment Work">
+        <meta name="theme-color" content="white">
+        <link rel="archives" href="https://enjoyment-work.netlify.app//archives/">
+
+        <meta content="index,follow" name="robots"><!-- All Search Engines -->
+        <meta content="index,follow" name="googlebot"><!-- Google Specific -->
+        
+            <!-- Font Awesome 5 -->
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/e9dddf84a6.js"></script>
+
+        <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16"/>
+        <link rel="canonical" href="https://enjoyment-work.netlify.app//posts">
+        <link rel="apple-touch-icon" href="https://brennanbrown.ca/img/avatar.jpg">
+
+        <!-- Bootstrap core CSS -->
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
+        <!-- CSS -->
+        <link class="default" href="/assets/css/style.css" media="all" rel="stylesheet"/>
+
+        <!--[if IE]>
+        <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+        <![endif]-->
+            <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+        <link rel="alternate" type="application/rss+xml" href="https://enjoyment-work.netlify.app//feed.xml">
+    </head
+</head>
+
+    <body>
+        <a class="skip-main" href="#content">Skip to main content</a>
+        <!-- MAIN CONTENT -->
+        <main class="flex-shrink-0" role="main">
+            <div class="row justify-content-center pb-3">
+                <div class="col-md-7 col-sm-12">
+                    <!-- HEADER -->
+<header class="mb-4">
+    <div class="dashboard disable-select">
+        <div class="mb-2 text-center">
+            <h1 class="p-2 mt-2" id="site-header">
+                <a href="/">Enjoyment Work</a>
+                <br class="d-md-none d-block">
+                <small>
+                     — a Digital Garden 🌱
+                </small>
+            </h1>
+        </div>
+        <div class="userboard profile-board-col">
+            <div class="username">
+                <span>
+                    <a " href="/about">Brennan Kenneth Brown</a>
+                </span>
+            </div>
+            <div class=" userdesc">
+                <p>A Digital Garden: Capturing my daily thoughts and progress, as well as curated ideas with unique synthesis—a personal zettelkasten.</p>
+            </div>
+            <div class="link-to-notes text-right">
+                <i class="fas fa-link"></i>
+                <a href="/notes">https://enjoyment-work.netlify.app/notes</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-site-subheader menu disable-select text-center">
+        <div class="about">
+            <a " href="/about">
+                <i class=" fas fa-signature"></i>
+                About
+            </a>
+        </div>
+        <div class="hashtags">
+            <a " href="/tags">
+                <i class=" fas fa-hashtag"></i>
+                Tags
+            </a>
+        </div>
+        <div class="categories">
+            <a " href="/categories">
+                <i class=" far fa-folder-open"></i>
+                Categories
+            </a>
+        </div>
+        <div class="archive">
+            <a " href="/archive">
+                <i class=" fas fa-archive"></i>
+                Archive
+            </a>
+        </div>
+        <div class="rss">
+            <a " href="/feed.xml">
+                <i class=" fas fa-rss"></i>
+                RSS
+            </a>
+        </div>
+        <div class="donate">
+            <a href="https://ko-fi.com/brennanbrown" ">
+                <i class=" fas fa-dollar-sign"></i>
+                Donate
+            </a>
+        </div>
+    </div>
+    <div class="searchbar search-container sans">
+        <i aria-hidden="true" class="fa fa-search"></i>
+        <input autocomplete="off" id="search-input" oninput="changeResultContainerDisp(this.value)" placeholder="Search Enjoyment Work..." type="text"/>
+        <label for="search-input"></label>
+        <ul id="results-container"></ul>
+    </div>
+    <script src="/assets/js/simple-jekyll-search.min.js"></script>
+    <script>
+        function changeResultContainerDisp(val) {
+            if (val) {
+                document.getElementById("results-container").style.display = "block";
+                document.getElementById("search-input").addEventListener('blur', function () {
+                    document.addEventListener('click', function (event) {
+                        var isClickInside = document.getElementById("results-container").contains(event
+                            .target);
+                        if (!isClickInside) {
+                            document.getElementById("results-container").style.display = "none";
+                        }
+                    })
+                })
+            } else {
+                document.getElementById("results-container").style.display = "none";
+            }
+        }
+        var sjs = SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: '/search.json',
+            searchResultTemplate: '<li class="search_res" style="list-style: none;"><a href="https://enjoyment-work.netlify.app/{url}" color: #555555;"><p><strong>></strong> {title}</p></a></li>',
+            noResultsText: 'No results found. Try another search.',
+            fuzzy: false,
+            limit: 5
+        })
+    </script><div class="mt-3" id="breadcrumbs">
+    
+    <i class="fas fa-arrow-left"></i>
+    <a href="/">Home</a>
+    
+        
+            /
+            Posts
+        
+    
+</div></header>
+                    <div data-url="https://enjoyment-work.netlify.app//posts/a-comprehensive-guide-to-self-learning" class="mt-2">
+            <time datetime="2020-11-03T00:00:00+08:00">Tuesday, November 3, 2020</time>
+            <a href="/posts/a-comprehensive-guide-to-self-learning">
+                <h2 class="my-2">
+                    A Comprehensive Guide to Self-Learning
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">How-To</a>
+                    </strong>
+                    |
+                
+                    <strong>
+                        Type:
+                        <a href="">Post</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#Creativity</a>
+                
+                    <a href="">#Inspiration</a>
+                
+                    <a href="">#Habits</a>
+                
+            </span>
+            <p class="text-justify m-3">One of the most effective methods to understanding the materials that you’re studying is to be passionate about them. This is the beauty of MOOCs — the idea that you can pick and choose to learn exactly and only what you want to.
+
+Don’t jump into a new study without having a plan for it. Whenever...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/a-glorious-example-post" class="mt-2">
+            <time datetime="2020-11-02T00:00:00+08:00">Monday, November 2, 2020</time>
+            <a href="/posts/a-glorious-example-post">
+                <h2 class="my-2">
+                    A Glorious Example Post
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">Example Posts</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#Jekyll</a>
+                
+                    <a href="">#Markdown</a>
+                
+            </span>
+            <p class="text-justify m-3">Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
+
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est ...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/markdown-syntax-preview" class="mt-2">
+            <time datetime="2020-10-31T00:00:00+08:00">Saturday, October 31, 2020</time>
+            <a href="/posts/markdown-syntax-preview">
+                <h2 class="my-2">
+                    Markdown Syntax Preview
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">Example Posts</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#Jekyll</a>
+                
+                    <a href="">#Markdown</a>
+                
+            </span>
+            <p class="text-justify m-3">Philosophy:
+
+Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
+
+Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. W...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/getting-unstuck" class="mt-2">
+            <time datetime="2020-10-30T00:00:00+08:00">Friday, October 30, 2020</time>
+            <a href="/posts/getting-unstuck">
+                <h2 class="my-2">
+                    Getting Unstuck for Creatives
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">How-To</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#Creativity</a>
+                
+                    <a href="">#Inspiration</a>
+                
+                    <a href="">#Habits</a>
+                
+            </span>
+            <p class="text-justify m-3">Taking a novel approach to life and breaking routines.
+
+Okay, let&#39;s be real. I&#39;ve found myself totally trapped in the habitual daily acts that&#39;ve sprung up thanks to COVID-19, and I&#39;m sure that I&#39;m not alone in that. The lack of travelling different places, meeting new people,...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/six-ways-to-achieve-new-things" class="mt-2">
+            <time datetime="2020-10-29T00:00:00+08:00">Thursday, October 29, 2020</time>
+            <a href="/posts/six-ways-to-achieve-new-things">
+                <h2 class="my-2">
+                    6 Ways to Achieve New Things
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">Post</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#Goals</a>
+                
+                    <a href="">#Habits</a>
+                
+                    <a href="">#Inspiration</a>
+                
+            </span>
+            <p class="text-justify m-3">Getting back on your horse, no matter how many times you’ve fallen off.
+
+
+Project Journal Bar
+
+In my last post, I talked about the struggles and failures I’ve faced the past few years. I’ve been thinking about how to tackle my short-comings and problems to solve a single, relatively-simple issue ...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/creating-a-contingency-plan" class="mt-2">
+            <time datetime="2020-10-28T00:00:00+08:00">Wednesday, October 28, 2020</time>
+            <a href="/posts/creating-a-contingency-plan">
+                <h2 class="my-2">
+                    Creating a Contingency Plan
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">Guides</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#Planning</a>
+                
+                    <a href="">#Productivity</a>
+                
+                    <a href="">#Writing</a>
+                
+            </span>
+            <p class="text-justify m-3">Failure is Important
+
+Last month, I had the idea to write an article each day for the month. How long did that last? Only five days. No matter how you look at it, that is failure. And it’s not just about the fact I didn’t manage to beat the challenge, it’s more about the principle of the matter. ...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/my-writing-process" class="mt-2">
+            <time datetime="2020-10-27T00:00:00+08:00">Tuesday, October 27, 2020</time>
+            <a href="/posts/my-writing-process">
+                <h2 class="my-2">
+                    My Writing Process
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">Guides</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#Productivity</a>
+                
+                    <a href="">#Planning</a>
+                
+                    <a href="">#Writing</a>
+                
+            </span>
+            <p class="text-justify m-3">Five Steps to Go From Brainstorming to Completed Work
+
+Let’s get down to the bare bones to start with: Prepare yourself and focus. Brainstorm and allow yourself to have bad ideas. Outline a thesis. Draft and edit. Cut the non-essential. Now, let’s expand on these ideas…
+
+Today is the third day of...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/disrupting-the-attention-based-economy" class="mt-2">
+            <time datetime="2020-10-26T00:00:00+08:00">Monday, October 26, 2020</time>
+            <a href="/posts/disrupting-the-attention-based-economy">
+                <h2 class="my-2">
+                    Disrupting the Attention-based Economy
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">Essays</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#Productivity</a>
+                
+                    <a href="">#Habits</a>
+                
+            </span>
+            <p class="text-justify m-3">When you wake up in the morning and get out of bed — or even before you get out of bed — what’s the first thing that grabs your attention? Whatever it is, it’s going to be responsible for your first thoughts of the day. Throughout the rest of your day, you’ll be faced with a bombardment of distra...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/the-duality-of-purpose-and-work" class="mt-2">
+            <time datetime="2020-10-25T00:00:00+08:00">Sunday, October 25, 2020</time>
+            <a href="/posts/the-duality-of-purpose-and-work">
+                <h2 class="my-2">
+                    The Duality of Purpose and Work
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">Essays</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#Purpose</a>
+                
+                    <a href="">#Inspiration</a>
+                
+            </span>
+            <p class="text-justify m-3">PART ONE: HAVING FAITH IN GRAND DREAMS. Understanding the why of the work is the most important thing that’s needed when starting out. It’s so easy to become discouraged when you’re in the the thick of the weeds, when you need to do difficult or tedious. Motivation and discipline to do such work ...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/informational-hazard-thinking-before-consuming" class="mt-2">
+            <time datetime="2020-06-01T00:00:00+08:00">Monday, June 1, 2020</time>
+            <a href="/posts/informational-hazard-thinking-before-consuming">
+                <h2 class="my-2">
+                    (Sample Essay) Informational Hazard - Thinking Before Consuming
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">Post</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#Practical</a>
+                
+            </span>
+            <p class="text-justify m-3">Information is probably the single most addictive substance, even more so than heroin in it can give you the kick even before you have consumed it, let alone waiting for the system to digest it. And what is more interesting is, the quality and the content(in chemist-speak, the composition, and th...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/Introduction-to-enjoyment-work" class="mt-2">
+            <time datetime="2020-05-01T00:00:00+08:00">Friday, May 1, 2020</time>
+            <a href="/posts/Introduction-to-enjoyment-work">
+                <h2 class="my-2">
+                    Introduction to Enjoyment work
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">Post</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#jekyll</a>
+                
+                    <a href="">#theme</a>
+                
+            </span>
+            <p class="text-justify m-3">Enjoyment work is a highly functional jekyll-based theme that combines the best of different worlds (atleast tries to 😅). It is a minimal and distraction free theme that strives to provide maximum value all without holding back on any essential features that a user would benefit from or would des...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/Exploring-the-features-of-enjoyment-work" class="mt-2">
+            <time datetime="2020-04-01T00:00:00+08:00">Wednesday, April 1, 2020</time>
+            <a href="/posts/Exploring-the-features-of-enjoyment-work">
+                <h2 class="my-2">
+                    Exploring the features of Enjoyment work
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">Post</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#test</a>
+                
+            </span>
+            <p class="text-justify m-3">Introduction
+
+Essentiality is the heart of any good software, and this theme is designed to ensure that I don&#39;t add things that I won&#39;t use on a daily basis or not have things that would be important for my personal usecase. It has been designed carefully to get rid of all the feature cre...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/How-to-setup-enjoyment-work" class="mt-2">
+            <time datetime="2020-03-01T00:00:00+08:00">Sunday, March 1, 2020</time>
+            <a href="/posts/How-to-setup-enjoyment-work">
+                <h2 class="my-2">
+                    How-To Setup Enjoyment work
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">test</a>
+                    </strong>
+                    |
+                
+                    <strong>
+                        Type:
+                        <a href="">Post</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#jekyll</a>
+                
+                    <a href="">#theme</a>
+                
+            </span>
+            <p class="text-justify m-3">This is going to be a super simple post about how to setup and use this theme for your own website.
+
+Usage
+
+Q. What will it look like when I am done setting it up?
+
+
+  This is what it should look (minus the exact essays ofcourse):
+
+
+
+Now without further ado, let&#39;s get started!
+
+Setup Prerequi...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/How-to-use-enjoyment-work-features-on-your-website" class="mt-2">
+            <time datetime="2020-02-01T00:00:00+08:00">Saturday, February 1, 2020</time>
+            <a href="/posts/How-to-use-enjoyment-work-features-on-your-website">
+                <h2 class="my-2">
+                    How to use Enjoyment work features on your website
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">Post</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#jekyll</a>
+                
+                    <a href="">#theme</a>
+                
+            </span>
+            <p class="text-justify m-3">Welcome to this feature usage tour. This is going to be another short post that describes how to use all the fancy features we saw in [[Exploring the features of Enjoyment work]]. So without further ado, let&#39;s get started.
+
+The default features
+
+All the default jekyll markdown features are ma...</p>
+        </div>
+        <hr><div data-url="https://enjoyment-work.netlify.app//posts/Test-page-to-see-how-the-markdown-is-rendered" class="mt-2">
+            <time datetime="2020-01-01T00:00:00+08:00">Wednesday, January 1, 2020</time>
+            <a href="/posts/Test-page-to-see-how-the-markdown-is-rendered">
+                <h2 class="my-2">
+                    Example Page to View Markdown Rendering
+                </h2>
+            </a>
+            <span>
+                
+                    <strong>
+                        Type:
+                        <a href="">Post</a>
+                    </strong>
+                    |
+                
+                
+                    <a href="">#markdown</a>
+                
+            </span>
+            <p class="text-justify m-3">Philosophy:
+
+Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
+
+Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. W...</p>
+        </div>
+        <hr>
+                    <div id="content">
+</div>
+                </div>
+            </div>
+                <button class="scroll-to-top" id="scroll-to-top">
+                    UP <i class="fa fa-chevron-up"></i>
+                </button>
+            </div>
+        </main>
+        <!-- FOOTER -->
+<footer class="page-footer font-small blue" id="footer">
+    <div class="container-fluid text-sm-left">
+        <div class="row">
+            <div class="col-sm-6 mt-sm-0 my-3">
+                <h2 class="text-uppercase text-center">About
+                    Enjoyment Work</h2>
+                <p class="text-justify text-white mx-3">
+                    <small>The phrase "digital garden" is a metaphor for thinking about writing and creating that focuses less on the resulting "showpiece" and more on the process, care, and craft it takes to get there. While not everybody has or works in a dirt garden, we all share a familiarity with the idea of what a garden is.</small>
+                </p>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-1">
+                <h2 class="text-uppercase">Directory</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/home">
+                            <i class="fas fa-home"></i>
+                            Home Page</a>
+                    </li>
+                    <li>
+                        <a href="/about">
+                            <i class="fas fa-signature"></i>
+                            About</a>
+                    </li>
+                    <li>
+                        <a href="/posts">
+                            <i class="fas fa-flag"></i>
+                            Blog Posts</a>
+                    </li>
+                    <li>
+                        <a href="/feeds">
+                            <i class="fas fa-rss-square"></i>
+                            RSS Feeds</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-1">
+                <h2 class="text-uppercase">Other Places</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://github.com/brennanbrown">
+                            <i class="fab fa-github"></i>
+                            GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/brennankbrown">
+                            <i class="fab fa-twitter"></i>
+                            Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://brennanbrown.ca">
+                            <i class="fas fa-briefcase"></i>
+                            Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="mailto:mail@brennanbrown.ca">
+                            <i class="fas fa-envelope"></i>
+                            E-mail</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center py-1 px-5">
+        Source Code licensed
+        <a href="https://github.com/brennanbrown/enjoyment-work/blob/master/LICENSE">MIT</a>
+        2023.
+        <br/>
+        Website content licensed
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+        |
+        <a href="https://github.com/brennanbrown/enjoyment-work">
+            View Source Code
+        </a>
+
+    </div>
+</footer>
+
+        <!-- SCRIPTS -->
+<script>
+  document
+    .getElementById("scroll-to-top")
+    .addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    });
+</script>
+
+<script type="text/javascript">
+    window.MathJax = {
+        tex: {
+            packages: ["base", "ams"]
+        },
+        loader: {
+            load: ["ui/menu", "[tex]/ams"]
+        }
+    };
+</script>
+
+<script async id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" type="text/javascript"></script>
+
+    </body>
+</html>

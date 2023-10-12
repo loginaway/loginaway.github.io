@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HEAD -->
+
+<head>
+    <!-- More information: https://htmlhead.dev/ -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Jekyll" name="generator">
+    <link href="LICENSE" rel="license">
+
+    <meta content="Enjoyment Work" property="og:site_name"/>
+    <meta content="A Digital Garden: Capturing my daily thoughts and progress, as well as curated ideas with unique synthesis—a personal zettelkasten." property="og:description">
+    <meta content="https://enjoyment-work.netlify.app//about/" property="article:author">
+    <meta name="Description" content="A Digital Garden: Capturing my daily thoughts and progress, as well as curated ideas with unique synthesis—a personal zettelkasten."><meta content="A Comprehensive Guide to Self-Learning" property="og:title">
+        <meta content="article" property="og:type">
+        <meta content="https://enjoyment-work.netlify.app//posts/a-comprehensive-guide-to-self-learning" property="og:url"><title>Enjoyment Work
+        |
+            A Comprehensive Guide to Self-Learning</title>
+
+        <meta name="application-name" content="Enjoyment Work">
+        <meta name="theme-color" content="white">
+        <link rel="archives" href="https://enjoyment-work.netlify.app//archives/">
+
+        <meta content="index,follow" name="robots"><!-- All Search Engines -->
+        <meta content="index,follow" name="googlebot"><!-- Google Specific -->
+        
+            <!-- Font Awesome 5 -->
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/e9dddf84a6.js"></script>
+
+        <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16"/>
+        <link rel="canonical" href="https://enjoyment-work.netlify.app//posts/a-comprehensive-guide-to-self-learning">
+        <link rel="apple-touch-icon" href="https://brennanbrown.ca/img/avatar.jpg">
+
+        <!-- Bootstrap core CSS -->
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
+        <!-- CSS -->
+        <link class="default" href="/assets/css/style.css" media="all" rel="stylesheet"/>
+
+        <!--[if IE]>
+        <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+        <![endif]-->
+            <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+        <link rel="alternate" type="application/rss+xml" href="https://enjoyment-work.netlify.app//feed.xml">
+    </head
+</head>
+
+    <body>
+        <a class="skip-main" href="#content">Skip to main content</a>
+        <!-- MAIN CONTENT -->
+        <main class="flex-shrink-0" role="main">
+            <div class="row justify-content-center pb-3">
+                <div class="col-md-7 col-sm-12">
+                    <!-- HEADER -->
+<header class="mb-4">
+    <div class="dashboard disable-select">
+        <div class="mb-2 text-center">
+            <h1 class="p-2 mt-2" id="site-header">
+                <a href="/">Enjoyment Work</a>
+                <br class="d-md-none d-block">
+                <small>
+                     — a Digital Garden 🌱
+                </small>
+            </h1>
+        </div>
+        <div class="userboard profile-board-col">
+            <div class="username">
+                <span>
+                    <a " href="/about">Brennan Kenneth Brown</a>
+                </span>
+            </div>
+            <div class=" userdesc">
+                <p>A Digital Garden: Capturing my daily thoughts and progress, as well as curated ideas with unique synthesis—a personal zettelkasten.</p>
+            </div>
+            <div class="link-to-notes text-right">
+                <i class="fas fa-link"></i>
+                <a href="/notes">https://enjoyment-work.netlify.app/notes</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-site-subheader menu disable-select text-center">
+        <div class="about">
+            <a " href="/about">
+                <i class=" fas fa-signature"></i>
+                About
+            </a>
+        </div>
+        <div class="hashtags">
+            <a " href="/tags">
+                <i class=" fas fa-hashtag"></i>
+                Tags
+            </a>
+        </div>
+        <div class="categories">
+            <a " href="/categories">
+                <i class=" far fa-folder-open"></i>
+                Categories
+            </a>
+        </div>
+        <div class="archive">
+            <a " href="/archive">
+                <i class=" fas fa-archive"></i>
+                Archive
+            </a>
+        </div>
+        <div class="rss">
+            <a " href="/feed.xml">
+                <i class=" fas fa-rss"></i>
+                RSS
+            </a>
+        </div>
+        <div class="donate">
+            <a href="https://ko-fi.com/brennanbrown" ">
+                <i class=" fas fa-dollar-sign"></i>
+                Donate
+            </a>
+        </div>
+    </div>
+    <div class="searchbar search-container sans">
+        <i aria-hidden="true" class="fa fa-search"></i>
+        <input autocomplete="off" id="search-input" oninput="changeResultContainerDisp(this.value)" placeholder="Search Enjoyment Work..." type="text"/>
+        <label for="search-input"></label>
+        <ul id="results-container"></ul>
+    </div>
+    <script src="/assets/js/simple-jekyll-search.min.js"></script>
+    <script>
+        function changeResultContainerDisp(val) {
+            if (val) {
+                document.getElementById("results-container").style.display = "block";
+                document.getElementById("search-input").addEventListener('blur', function () {
+                    document.addEventListener('click', function (event) {
+                        var isClickInside = document.getElementById("results-container").contains(event
+                            .target);
+                        if (!isClickInside) {
+                            document.getElementById("results-container").style.display = "none";
+                        }
+                    })
+                })
+            } else {
+                document.getElementById("results-container").style.display = "none";
+            }
+        }
+        var sjs = SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: '/search.json',
+            searchResultTemplate: '<li class="search_res" style="list-style: none;"><a href="https://enjoyment-work.netlify.app/{url}" color: #555555;"><p><strong>></strong> {title}</p></a></li>',
+            noResultsText: 'No results found. Try another search.',
+            fuzzy: false,
+            limit: 5
+        })
+    </script><div class="mt-3" id="breadcrumbs">
+    
+    <i class="fas fa-arrow-left"></i>
+    <a href="/">Home</a>
+    
+        
+            /
+            <a href="/posts/">Posts</a>
+        
+    
+        
+            /
+            A Comprehensive Guide to Self-Learning
+        
+    
+</div></header>
+                    
+                    <div id="content"><article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+    <h1>A Comprehensive Guide to Self-Learning</h1><!-- Parse internal links, external links, transclusions, etc. and manipulate the content to reflect it accordingly --><ul class="tags"><li>
+            <strong>
+                <a class="post-metadata" href="/dates/#03-November-2020">Tuesday, November 3, 2020</a>
+            </strong>
+        </li>
+        <!-- Loop through page categories and print them in tags --><li>
+                <a class="tag" href="/tags/#Creativity">#Creativity</a>
+            </li><li>
+                <a class="tag" href="/tags/#Inspiration">#Inspiration</a>
+            </li><li>
+                <a class="tag" href="/tags/#Habits">#Habits</a>
+            </li></ul><div class="toc mb-5" id="toc">
+    <div id="toctitle">
+        <h2>Table of Contents:</h2>
+    </div>
+    <ul id="toc" class="section-nav">
+<li class="entry toc-h4"><a href="#how-to-unlock-the-full-potential-of-a-new-era-of-education">How to unlock the full potential of a new era of education.</a></li>
+<li class="entry toc-h4"><a href="#use-it-or-loseit">Use It or Lose It</a></li>
+<li class="entry toc-h3"><a href="#the-elements-of-a-successful-course">The Elements of a Successful Course</a>
+<ul>
+<li class="entry toc-h4"><a href="#1-thelesson">1. The Lesson</a></li>
+<li class="entry toc-h4"><a href="#2-notetaking">2. Note Taking</a></li>
+<li class="entry toc-h4"><a href="#3-flashcards-quizzes">3. Flashcards / Quizzes</a></li>
+<li class="entry toc-h4"><a href="#4-assignments-projects">4. Assignments / Projects</a></li>
+<li class="entry toc-h4"><a href="#5-share-yourwork">5. Share Your Work</a></li>
+</ul>
+</li>
+<li class="entry toc-h3"><a href="#additional-tips">Additional Tips</a></li>
+</ul>
+</div><div class="content"><p>One of the most effective methods to understanding the materials that you’re studying is to be passionate about them. This is the beauty of MOOCs — the idea that you can pick and choose to learn exactly and only what you want to.</p>
+
+<p>Don’t jump into a new study without having a plan for it. Whenever you feel discouraged or frustrated, you can take a step back and look at the bigger picture.</p>
+
+<p>There’s plenty of meaningful applications for learning new skills: to further your career, to find a new skill to freelance or moonlight with, or to contribute to a hobby or non-profit cause for the sake of goodness.</p>
+
+<p>When you have a mindset of passion — of having a reason to learn and a future goal to look forward too — it is far easier to focus and digest material on a deeper level of understanding, beyond simply learning from rote.</p>
+
+<p><strong>Schedule:</strong> With so much choice and freedom, it can be easy to try to accomplish too many things at once, only to end up neglecting your studies altogether. This is why it’s so important to chart out a path for yourself once you figure out what you want to accomplish.</p>
+
+<p>Ask yourself how much time you’re able to sacrifice and how much effort you’ll sincerely put into this. Once you have those answers, you’ll be able to plan your own curriculum of sorts.</p>
+
+<figure class="wp-caption">
+
+<img data-width="1280" data-height="983" src="https://cdn-images-1.medium.com/max/2560/1*gWYKhWJzQ_lgsdWR3EV4uQ.jpeg" /> <figcaption class="wp-caption-text">Navajo Students Studying Mathematics at Day School | <a href="https://commons.wikimedia.org/wiki/File:Navajo_students_studying_mathematics_at_day_school_-_NARA_-_295155.jpg" target="_blank" rel="noopener noreferrer"><strong>Source</strong></a></figcaption></figure>
+
+<h4 id="how-to-unlock-the-full-potential-of-a-new-era-of-education">How to unlock the full potential of a new era of education.</h4>
+
+<p>For the past few years, the world of <a href="https://www.mooc-list.com/" target="_blank" rel="noopener noreferrer">MOOC</a> (Massively Open Online Courses) has become a fiercely large phenomenon. Across Medium and <a href="https://www.reddit.com/r/learnprogramming/comments/3zfbp1/heres_a_list_of_221_free_online_programmingcs/" target="_blank" rel="noopener noreferrer">Reddit</a> you can find great, comprehensive lists of free classes you can take:</p>
+
+<p><a href="https://medium.freecodecamp.com/the-best-free-online-university-courses-for-learning-a-new-world-language-ccf42ad1b5d5">https://medium.freecodecamp.com/the-best-free-online-university-courses-for-learning-a-new-world-language-ccf42ad1b5d5</a></p>
+
+<!--more-->
+
+<p><span>T</span>his, however, is not one of those lists. With this new paradigm of learning, there comes the need to figuring out new methods of understanding and synthesising what is being learned. There is no curriculum, no consequences, no deadlines. This requires an exercise in self-reliance to institute. The student, in a way, must also learn how to become the teacher.</p>
+
+<p>Creating lesson plan — let alone a learning path for yourself — is no simple task. And following through with it is another thing entirely. I am no expert myself, so take this rhetoric with a grain of salt. The examples I am going to be showing are only my own, as I’m using myself as a case study.</p>
+
+<h4 id="use-it-or-loseit">Use It or Lose It</h4>
+
+<p>This guide is meant as a way for you to take what you are learning and <em>apply</em> it in a meaningful way. It is not learning for the mere sake of learning — anybody can do that. In fact, that’s what is required of us throughout our schooling years.</p>
+
+<p>The reason we forget what we learn in school is because we don’t use it in our every day life. In fact, that’s one of the biggest complaints people have in school.</p>
+
+<figure class="wp-caption">
+
+<img data-width="1070" data-height="570" src="https://cdn-images-1.medium.com/max/800/1*KfQQYIJcIxgSJp8XuL2xPA.png" /> <figcaption class="wp-caption-text">An Old Prototype of My Schedule</figcaption></figure>
+
+<h3 id="the-elements-of-a-successful-course">The Elements of a Successful Course</h3>
+
+<p>I’m going to break down what I think are the most important aspects when you’re learning something new on your own.</p>
+
+<h4 id="1-thelesson">1. The Lesson</h4>
+
+<p>The first step is the most important part, obviously. Whether you’re taking an online course, reading a book, or studying another way — you need the content to be able to learn it. However, it’s a mistake to think that this is enough. This is really just the beginning.</p>
+
+<h4 id="2-notetaking">2. Note Taking</h4>
+
+<p>The second step is to go beyond the course. Note-taking is the most often used method of retention and synthesis of learning. There are many different styles of note-taking — from traditional, to Cornell, to mind-mapping.</p>
+
+<p>The exacts of successful note-taking vary from person-to-person, but I find it’s very useful to begin to index your note-taking with what you expect the themes of your learning are going to be for that lesson, followed by reviewing what the most important things you learned at the end.</p>
+
+<p>There is nothing wrong with a pack-rat mentality of keeping track of everything that you’re learning, so long as it doesn’t detract from you fully comprehending what is most important.</p>
+
+<p>I also suggest that you take notes by hand first — for a few years I tried to take notes on my computer, and found that even though it made organisation and searching a breeze, I felt as though I retained less. Once you have the notes written out, though, I find that <em>migrating</em> them to the computer does help retention and organisation.</p>
+
+<h4 id="3-flashcards-quizzes">3. Flashcards / Quizzes</h4>
+
+<p>The third step to better your learning is to then take your notes a step further by converting them into materials that you can test yourself with. This is why it’s so important to make sure you have the most important material kept, so you can easily create Q+A’s for it.</p>
+
+<p>Some courses already have quizzes, which is excellent, but by creating your own, you’re coming up with questions as well as answers.</p>
+
+<p>For flash cards, I recommend the software Anki, and <a href="https://alexvermeer.com/anki-essentials/" target="_blank" rel="noopener noreferrer">this guide</a> for it.</p>
+
+<h4 id="4-assignments-projects">4. Assignments / Projects</h4>
+
+<p>The fourth step is what I believe is the most important. Traditionally speaking, assignments are simply another part of the system. They are usually rather dry, and have no inherent value other than for the course itself.</p>
+
+<p>But with MOOCs, you have the ability to push yourself to use the knowledge that you’ve gained to create your own projects that you can freely share and use. <em>Apply</em> your learn and thus gain something outside of the learning as the reward.</p>
+
+<p>A good example of this is that I’m in the process of making a blog with <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a>, which has the twofold benefits of learning web development, as well as having a place to document my other learning, which leads into #5.</p>
+
+<h4 id="5-share-yourwork">5. Share Your Work</h4>
+
+<p>Once you have finished a course, you have not only have you improved your own learning by creating all of the above resources, but you now also have the opportunity to share them with others.</p>
+
+<p>Create a blog or use other social media to share what you’ve learned and what you’ve made in the process. Find others that you can collaborate and study with. Build a community of learners and creators. There is no reason to go at this alone.</p>
+
+<p>See Also: <a href="http://austinkleon.com/show-your-work/" target="_blank" rel="noopener noreferrer">Show Your Work!</a></p>
+
+<h3 id="additional-tips">Additional Tips</h3>
+
+<ul>
+  <li>The best skills to learn first are ‘meta-skills’, such as <a href="https://www.coursera.org/learn/learning-how-to-learn" target="_blank" rel="noopener noreferrer">learning how to learn</a>, time management or other skills that you can use in your studying.</li>
+  <li>Figure out a system and stick to it. Once you have a schedule made, find a way to link it to your created materials, as well as any other important information. (My personal recommendations would be <a href="https://www.onenote.com/" target="_blank" rel="noopener noreferrer">OneNote</a> for Windows, or using Sublime Text w/ Markdown for Linux.)</li>
+  <li>When you’re writing about what you’ve learned, don’t be afraid to add your own personal story or information — conglomerate multiple sources of learning for a more thorough discourse.</li>
+</ul>
+
+</div><div class="row" id="author">
+        <div class="col-xl-3 col-12">
+            <img src="https://brennanbrown.ca/img/avatar.jpg" class="img-thumbnail d-block mx-auto"/>
+        </div>
+        <div class="col-xl-9 col-12" id="author-text">
+            <h2 class="text-lg-left text-center">
+                About
+                Brennan Kenneth Brown
+            </h2>
+            <p>
+                Hey there! My name is Brennan, I'm a 27-year-old Métis web developer and content strategist from Winnipeg, Manitoba and currently reside in Calgary, Alberta. I've recently compeleted a Full Stack Developer Program at EvolveU, and I'm looking to help those that need web development work done, or searching for ideas and management for their next content project.
+            </p>
+        </div>
+    </div><!-- BACKLINKS --><!-- RELATED POSTS --><div class="related" id="jekyll-seamless-relatedposts">
+            <h2>Related Posts</h2>
+            <div class="related-wrapper"><div class="related-group">
+                            <a href="/posts/getting-unstuck">
+                                <p class="related-title">Getting Unstuck for Creatives</p>
+                                <p class="related-excerpt">Taking a novel approach to life and breaking routines.
+
+Okay, let's be real. I've found myself totally trapped in the habitual daily acts...</p>
+                            </a>
+                        </div><div class="related-group">
+                            <a href="/posts/six-ways-to-achieve-new-things">
+                                <p class="related-title">6 Ways to Achieve New Things</p>
+                                <p class="related-excerpt">
+  Getting back on your horse, no matter how many times you’ve fallen off.
+
+
+Project Journal Bar
+
+In my last post, I talked about the str...</p>
+                            </a>
+                        </div><div class="related-group">
+                            <a href="/posts/disrupting-the-attention-based-economy">
+                                <p class="related-title">Disrupting the Attention-based Economy</p>
+                                <p class="related-excerpt">When you wake up in the morning and get out of bed — or even before you get out of bed — what’s the first thing that grabs your attention...</p>
+                            </a>
+                        </div><div class="related-group">
+                            <a href="/posts/the-duality-of-purpose-and-work">
+                                <p class="related-title">The Duality of Purpose and Work</p>
+                                <p class="related-excerpt">PART ONE: HAVING FAITH IN GRAND DREAMS. Understanding the why of the work is the most important thing that’s needed when starting out. It...</p>
+                            </a>
+                        </div></div>
+            <br/>
+        </div></article></div>
+                </div>
+            </div>
+                <button class="scroll-to-top" id="scroll-to-top">
+                    UP <i class="fa fa-chevron-up"></i>
+                </button>
+            </div>
+        </main>
+        <!-- FOOTER -->
+<footer class="page-footer font-small blue" id="footer">
+    <div class="container-fluid text-sm-left">
+        <div class="row">
+            <div class="col-sm-6 mt-sm-0 my-3">
+                <h2 class="text-uppercase text-center">About
+                    Enjoyment Work</h2>
+                <p class="text-justify text-white mx-3">
+                    <small>The phrase "digital garden" is a metaphor for thinking about writing and creating that focuses less on the resulting "showpiece" and more on the process, care, and craft it takes to get there. While not everybody has or works in a dirt garden, we all share a familiarity with the idea of what a garden is.</small>
+                </p>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-1">
+                <h2 class="text-uppercase">Directory</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/home">
+                            <i class="fas fa-home"></i>
+                            Home Page</a>
+                    </li>
+                    <li>
+                        <a href="/about">
+                            <i class="fas fa-signature"></i>
+                            About</a>
+                    </li>
+                    <li>
+                        <a href="/posts">
+                            <i class="fas fa-flag"></i>
+                            Blog Posts</a>
+                    </li>
+                    <li>
+                        <a href="/feeds">
+                            <i class="fas fa-rss-square"></i>
+                            RSS Feeds</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-1">
+                <h2 class="text-uppercase">Other Places</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://github.com/brennanbrown">
+                            <i class="fab fa-github"></i>
+                            GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/brennankbrown">
+                            <i class="fab fa-twitter"></i>
+                            Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://brennanbrown.ca">
+                            <i class="fas fa-briefcase"></i>
+                            Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="mailto:mail@brennanbrown.ca">
+                            <i class="fas fa-envelope"></i>
+                            E-mail</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center py-1 px-5">
+        Source Code licensed
+        <a href="https://github.com/brennanbrown/enjoyment-work/blob/master/LICENSE">MIT</a>
+        2023.
+        <br/>
+        Website content licensed
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+        |
+        <a href="https://github.com/brennanbrown/enjoyment-work">
+            View Source Code
+        </a>
+
+    </div>
+</footer>
+
+        <!-- SCRIPTS -->
+<script>
+  document
+    .getElementById("scroll-to-top")
+    .addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    });
+</script>
+
+<script type="text/javascript">
+    window.MathJax = {
+        tex: {
+            packages: ["base", "ams"]
+        },
+        loader: {
+            load: ["ui/menu", "[tex]/ams"]
+        }
+    };
+</script>
+
+<script async id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" type="text/javascript"></script>
+
+    </body>
+</html>
