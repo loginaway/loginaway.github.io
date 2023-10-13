@@ -263,8 +263,8 @@ hr {
 }
 
 .main-site-subheader {
-  border-bottom: 1px solid #f7f7f7;
-  padding-left: 15px;
+  /* border-bottom: 1px solid #f7f7f7; */
+  padding-right: 15px;
 }
 
 
@@ -277,21 +277,23 @@ hr {
 .projects,
 .donate {
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom:10px;
   display: inline-block;
 }
 
+
 .menu a {
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 18px;
+  /* font-weight: 100; */
   padding: 3px 10px;
-  border-right: 1px grey solid;
+  /* border-right: 1px rgba(255, 255, 255, 0) solid; */
   margin-left: -4px;
+
 }
 
 .menu a:hover {
-  background-color: #eee;
-  color: black;
+  background-color: #f6f6f6;
+  color: rgb(154, 154, 154);
   text-decoration: none;
   /* border-radius: 8px; */
 }
@@ -1225,13 +1227,13 @@ figure img {
   font-family: 'Linux Biolinum O', sans-serif !important;
   /* font-weight: 100; */
   word-spacing: -3px;
-  background: #989898;
+  background: #ababab53;
   color: #000000;
 }
 
 #footer a {
   font-weight: normal;
-  color: #000000;
+  color: #a5a4a4;
 }
 
 #footer a:hover {

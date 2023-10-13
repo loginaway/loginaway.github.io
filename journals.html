@@ -61,7 +61,7 @@
 <header class="mb-4">
 
 
-    <div class="dashboard disable-select">
+    <div class="dashboard ">
 
         <!-- 大标题 -->
         <div>
@@ -88,16 +88,13 @@
                     <a href="https://twitter.com/jchengaj"  style="margin-right:10px">
                                 <i class="fab fa-twitter"></i>
                         Twitter</a>
-                    <a href="mailto:jchengaj@cse.ust.hk"  style="margin-right:10px">
-                        <i class="fas fa-envelope"></i>
-                        jchengaj@cse.ust.hk</a>
                     <a href="https://scholar.google.com/citations?user=btRJjVEAAAAJ" style="margin-right:10px">
                         <i class="ai ai-google-scholar-square"></i>
                         Google Scholar</a>
 
-                    <!-- <a href="https://www.semanticscholar.org/author/Cheng-Jiayang/2109077713" style="margin-right:10px">
-                        <i class="fab fa-semantic-scholar"></i>
-                        Semantic Scholar</a> -->
+                    <a href="https://www.semanticscholar.org/author/Cheng-Jiayang/2109077713" style="margin-right:10px">
+                        <i class="ai ai-semantic-scholar-square"></i>
+                        Semantic Scholar</a>
             </div>
             
             
@@ -108,17 +105,24 @@
             <div class="float-left">
                 <figure style="width:200px;margin-right:50px;"">
                     <img src="https://media.licdn.com/dms/image/C4D03AQFZGcnYTugGNw/profile-displayphoto-shrink_800_800/0/1656670138207?e=2147483647&v=beta&t=NvXZII1TIUFjKnjTdCQfJ76qrvHLQlj__3wowC13cks">
-                    <figcaption style="font-style: italic;">In Shanghai, 2021</figcaption>
+                    <figcaption style="font-style: italic;">In Shanghai, 2021
+                        <br>
+                        <a  style="margin-right:10px">
+                            <i class="fas fa-envelope"></i>
+                            jchengaj<span style="display:none">null</span>@<span style="display:none">null</span>cse.ust.hk</a>
+                        </figcaption>
                 </figure>
                 
             </div>
             <div style="display:inline;"> 
                 <p>
                 I am a Ph.D. student at <a href="https://hkust.edu.hk" style="text-decoration: underline;"">the Hong Kong University of Science and Technology (HKUST)</a> with professor <a href="https://www.cse.ust.hk/~yqsong/" style="text-decoration: underline;">Yangqiu Song</a>. 
-                I am currently working as an intern with professor <a href="https://scholar.google.com/citations?user=k0KiE4wAAAAJ" style="text-decoration: underline;">Zheng Zhang</a> at Amazon Web Services AI Lab.
+                I am currently working as an intern with professor <a href="https://scholar.google.com/citations?user=k0KiE4wAAAAJ" style="text-decoration: underline;">Zheng Zhang</a> at <a  style="text-decoration: underline;">Amazon Web Services AI Lab</a>.
                 Before moving to Hong Kong, I received my Bachelor's degree in Data Science at <a href="https://www.fudan.edu.cn/en/" style="text-decoration: underline;">Fudan University</a> in 2021.
                 </p>
-                <p>My research interest is to ignite war between A and B using the state-of-the-art beam generator type X.</p>
+                <p>
+                    My research interest circles around knowledge grounding and analogical reasoning.
+                </p>
             </div>
                 
         </div>
@@ -164,21 +168,10 @@ I&#39;m also really happy for the spread of systems I have,...</p>
             </div>
         </main>
 
-        <!-- 页面底部区域 -->
-        <!-- FOOTER -->
+        <!-- 页面底部区域 只在首页显示简洁版 footer 其他页面显示多个tag+搜索框 --><!-- FOOTER -->
 <footer class="page-footer font-small blue" id="footer">
 
     <div class="footer-copyright text-center py-1 px-5">
-        <!-- Source Code licensed
-        <a href="https://github.com/loginaway/blob/master/LICENSE">MIT</a>
-        2023.
-        <br/>
-        Website content licensed
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> -->
-        <!-- |
-        <a href="https://github.com/loginaway">
-            View Source Code
-        </a> -->
 
 
         <!-- 分类按钮 -->
@@ -190,9 +183,19 @@ I&#39;m also really happy for the spread of systems I have,...</p>
             </div>
             <div class="posts">
                 <a " href="/posts">
-                    Blog Posts
+                    Posts
                 </a>
             </div>
+            <!-- <div class="posts">
+                <a " href="/notes">
+                    Notes
+                </a>
+            </div>
+            <div class="posts">
+                <a " href="/journals">
+                    journals
+                </a>
+            </div> -->
             <div class="hashtags">
                 <a " href="/tags">
                     Tags
@@ -249,9 +252,7 @@ I&#39;m also really happy for the spread of systems I have,...</p>
         </script>
     </div>
 </footer>
-
-
-        <!-- 上滑页面的按钮 -->
+<!-- 上滑页面的按钮 -->
         <button class="scroll-to-top" id="scroll-to-top">
             Scroll to top <i class="fa fa-chevron-up"></i>
         </button>
