@@ -54,8 +54,7 @@
             <div class="row justify-content-center pb-3">
                 <div class="col-md-7 col-sm-12">
 
-                    <!-- 顶部搜索栏，分类图标，title，intro box -->
-                    <!-- HEADER -->
+                    <!-- 顶部title，intro box --><!-- HEADER -->
 <header class="mb-4">
 
 
@@ -95,40 +94,7 @@
                         Semantic Scholar</a>
             </div>
             
-            
         </div>  
-
-
-        <div>
-            <div class="float-left">
-                <figure style="width:200px;margin-right:50px;"">
-                    <img src="https://media.licdn.com/dms/image/C4D03AQFZGcnYTugGNw/profile-displayphoto-shrink_800_800/0/1656670138207?e=2147483647&v=beta&t=NvXZII1TIUFjKnjTdCQfJ76qrvHLQlj__3wowC13cks">
-                    <figcaption style="font-style: italic;">In Shanghai, 2021
-                        <br>
-                        <a  style="margin-right:10px">
-                            <i class="fas fa-envelope"></i>
-                            jchengaj<span style="display:none">null</span>@<span style="display:none">null</span>cse.ust.hk</a>
-                        </figcaption>
-                </figure>
-                
-            </div>
-            <div style="display:inline;"> 
-                <p>
-                I am a Ph.D. student at <a href="https://hkust.edu.hk" style="text-decoration: underline;"">the Hong Kong University of Science and Technology (HKUST)</a> with professor <a href="https://www.cse.ust.hk/~yqsong/" style="text-decoration: underline;">Yangqiu Song</a>. 
-                I am currently working as an intern with professor <a href="https://scholar.google.com/citations?user=k0KiE4wAAAAJ" style="text-decoration: underline;">Zheng Zhang</a> at <a  style="text-decoration: underline;">Amazon Web Services AI Lab</a>.
-                Before moving to Hong Kong, I received my Bachelor's degree in Data Science at <a href="https://www.fudan.edu.cn/en/" style="text-decoration: underline;">Fudan University</a> in 2021.
-                </p>
-                <p>
-                    My research interest circles around knowledge grounding and analogical reasoning.
-                </p>
-            </div>
-                
-        </div>
-
-        <!-- <div class="float-left">
-            <p style="text-decoration: italic;">News:</p>
-            
-        </div> -->
     </div><div class="mt-3" id="breadcrumbs">
     
     <i class="fas fa-arrow-left"></i>
@@ -139,9 +105,7 @@
             
         
     
-</div></header>
-
-                    <!-- 渲染多项内容的页面，如notes posts journals的逻辑 -->
+</div></header><!-- 渲染多项内容的页面，如notes posts journals的逻辑 -->
                     <!-- 渲染 “posts” 页面内容 --><!-- 渲染 “notes”页面内容 --><!-- 渲染 “journals” 页面内容 -->
 
                     <div id="content"><article class="post">
