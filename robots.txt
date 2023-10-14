@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://loginaway.github.io/sitemap.xml
+Sitemap: https://jiayangcheng.com/sitemap.xml
