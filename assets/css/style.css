@@ -22,8 +22,6 @@ body {
   background-color: rgba(233, 250, 237, 0.509);;
 }
 
-
-
 .box {
   position: absolute;
   top: 0px;
@@ -1249,8 +1247,47 @@ figure img {
   font-family: Linux Biolinum O, sans-serif;
 }
 
+figcaption {
+  font-size: 0.9em;
+  font-weight: 100;
+  font-family: Linux Biolinum O, sans-serif;
+  font-style: italic;
+}
 
 .site-section-title {
   font-family: 'Linux Biolinum O', sans-serif;
   font-size: 25px;
+}
+
+
+/* Publication part */
+.publication-head {
+  display: table-cell;
+  width: 120px;
+}
+
+.publication-box {
+  background-color: #009bfc1a;
+}
+
+.publication-title {
+  /* font-style:italic; */
+  font-size:13pt;
+}
+
+.authorlist {
+  color:rgba(0, 0, 0, 0.425); 
+  font-family:"Linux Biolinum O", 
+  sans-serif; 
+  font-size:11pt
+}
+
+.publication-comment {
+  font-family:"Linux Libertine O", sans-serif;
+  color: rgb(8, 121, 42)
+}
+
+.purpleindent {
+  color:rgba(108, 52, 181, 0.851); 
+  margin-left:20px;
 }
