@@ -1259,7 +1259,6 @@ figcaption {
   font-size: 25px;
 }
 
-
 /* Publication part */
 .publication-head {
   display: table-cell;
@@ -1289,5 +1288,23 @@ figcaption {
 
 .purpleindent {
   color:rgba(108, 52, 181, 0.851); 
-  margin-left:20px;
+  margin-left:5px;
+}
+
+/* Experiences */
+#experiences {
+  background-color: #03ac7111;
+}
+
+.experience-content {
+  font-size: 13pt;
+  margin-left: 5px;
+}
+
+.experience-subtitle {
+  font-family: 'Linux Biolinum O', sans-serif;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
