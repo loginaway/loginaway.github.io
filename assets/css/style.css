@@ -5,7 +5,7 @@
 @import "/assets/css/accessibility.css";
 @import "/assets/css/toc.css";
 
-/* @import url('https://fonts.cdnfonts.com/css/linux-libertine-o'); */
+@import url('https://fonts.cdnfonts.com/css/linux-libertine-o');
 @import url('https://fonts.cdnfonts.com/css/linux-biolinum-o');
 
 /* Containers: Body, Container, Box, Main, Header, Content */
@@ -14,15 +14,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* body {
-  font-family: Inter, "Segoe UI", Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue", Ubuntu, sans-serif;
-  min-height: 450px;
-  counter-reset: sidenote-counter;
-}
-*/
 
 body {
-  font-family: 'Linux Biolinum O', sans-serif;
+  font-family: 'Linux Libertine O', sans-serif;
   min-height: 450px;
   counter-reset: sidenote-counter;
   background-color: rgba(233, 250, 237, 0.509);;
@@ -1183,19 +1177,20 @@ figure img {
   display: block;
 }
 
-/* #site-header a {
-  background-color: #333;
-  color: #fff;
-  padding: 3px 10px;
-  border-radius: 4px;
-} */
 
 
+#site-header {
+  font-family: 'Linux Biolinum O', sans-serif;
+}
 #site-header a:hover {
   /* color: #fffc99; */
   text-shadow: #555;
 }
 
+#site-header-widgets a{
+  font-family: 'Linux Biolinum O', sans-serif;
+  margin-right:10px;
+}
 #search-input {
   background-color: #eee;
   color: #333;
@@ -1242,4 +1237,20 @@ figure img {
 
 #tag-grid {
   max-height: 350px;
+}
+
+
+/* 自定义内容 */
+#news {
+  background-color: rgba(255, 255, 0, 0.13);
+}
+
+.news-content { 
+  font-family: Linux Biolinum O, sans-serif;
+}
+
+
+.site-section-title {
+  font-family: 'Linux Biolinum O', sans-serif;
+  font-size: 25px;
 }

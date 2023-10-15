@@ -74,27 +74,25 @@
             </div>
 
             <!-- 常用超链接 -->
-            <div class="p-2 mt-2" style="float:inline-end;">
-                    <a href="https://www.linkedin.com/in/jiayang-joey-cheng-1b87a5221"  style="margin-right:10px">
+            <div class="p-2 mt-2" style="float:inline-end;" id="site-header-widgets">
+                    <a href="https://www.linkedin.com/in/jiayang-joey-cheng-1b87a5221" >
                             <i class="fab fa-linkedin-in"></i>
                         Linkedin</a>
-                    <a href="https://github.com/loginaway"  style="margin-right:10px">
+                    <a href="https://github.com/loginaway">
                         <i class="fab fa-github"></i>
                         GitHub </a>
                     
-                    <a href="https://twitter.com/jchengaj"  style="margin-right:10px">
+                    <a href="https://twitter.com/jchengaj">
                                 <i class="fab fa-twitter"></i>
                         Twitter</a>
-                    <a href="https://scholar.google.com/citations?user=btRJjVEAAAAJ" style="margin-right:10px">
+                    <a href="https://scholar.google.com/citations?user=btRJjVEAAAAJ">
                         <i class="ai ai-google-scholar-square"></i>
                         Google Scholar</a>
 
-                    <a href="https://www.semanticscholar.org/author/Cheng-Jiayang/2109077713" style="margin-right:10px">
+                    <a href="https://www.semanticscholar.org/author/Cheng-Jiayang/2109077713">
                         <i class="ai ai-semantic-scholar-square"></i>
                         Semantic Scholar</a>
             </div>
-            
-            
         </div>  
 
 
@@ -124,16 +122,106 @@
                 
         </div>
 
-        <!-- <div class="float-left">
-            <p style="text-decoration: italic;">News:</p>
+        <!-- 最新消息 from data.news.yml -->
+        <div id="news" style="display:table">
+            <div style="display: table-cell;">
+                <p style="font-size: 18px; font-style:italic">
+                    News
+                </p>
+            </div>
             
-        </div> -->
+                <div >
+                    <!-- time  -->
+                    <div style="display:table-cell">
+                        <a style="color:rgba(108, 52, 181, 0.851); margin-left:20px" >
+                            10/2023: &nbsp
+                        </a>
+                    </div>
+                    <!-- content after time -->
+                    <div style="display:table-cell">
+                        <!-- Name tag of the news, bold & Red if set as "important", add link & display if "link" is provided -->
+                        
+                            <a   >
+                                🚀
+                            </a>
+                        
+                        <span class="news-content">
+                            <!-- Content of the news -->
+                            Our recent work on story analogies was accepted to EMNLP-2023 main conference! I will be attending in person. Please reach out : )
+                        </span>
+                    </div>
+                    
+                </div>
+            
+                <div >
+                    <!-- time  -->
+                    <div style="display:table-cell">
+                        <a style="color:rgba(108, 52, 181, 0.851); margin-left:20px" >
+                            09/2023: &nbsp
+                        </a>
+                    </div>
+                    <!-- content after time -->
+                    <div style="display:table-cell">
+                        <!-- Name tag of the news, bold & Red if set as "important", add link & display if "link" is provided -->
+                        
+                            <a   >
+                                🎉
+                            </a>
+                        
+                        <span class="news-content">
+                            <!-- Content of the news -->
+                            I am glad to share that I have been awarded <u><a href="https://www.ugc.edu.hk/eng/rgc/funding_opport/hkpfs/call_letter.html">the Hong Kong PhD Fellowship</a></u>. I will be starting my Ph.D. journey at HKUST soon.
+                        </span>
+                    </div>
+                    
+                </div>
+            
+                <div >
+                    <!-- time  -->
+                    <div style="display:table-cell">
+                        <a style="color:rgba(108, 52, 181, 0.851); margin-left:20px" >
+                            08/2023: &nbsp
+                        </a>
+                    </div>
+                    <!-- content after time -->
+                    <div style="display:table-cell">
+                        <!-- Name tag of the news, bold & Red if set as "important", add link & display if "link" is provided -->
+                        
+                        <span class="news-content">
+                            <!-- Content of the news -->
+                            Attending IJCAI-2023 at Macao as a student volunteer.
+                        </span>
+                    </div>
+                    
+                </div>
+            
+                <div >
+                    <!-- time  -->
+                    <div style="display:table-cell">
+                        <a style="color:rgba(108, 52, 181, 0.851); margin-left:20px" >
+                            02/2023: &nbsp
+                        </a>
+                    </div>
+                    <!-- content after time -->
+                    <div style="display:table-cell">
+                        <!-- Name tag of the news, bold & Red if set as "important", add link & display if "link" is provided -->
+                        
+                        <span class="news-content">
+                            <!-- Content of the news -->
+                            Attending WSDM-2023 at Singapore.
+                        </span>
+                    </div>
+                    
+                </div>
+            
+        </div>
+
     </div></header><!-- 渲染多项内容的页面，如notes posts journals的逻辑 -->
                     <!-- 渲染 “posts” 页面内容 --><!-- 渲染 “notes”页面内容 --><!-- 渲染 “journals” 页面内容 -->
 
                     <div id="content"><article class="post">
     
-    <div class="post-content"><!-- Parse internal links, external links, transclusions, etc. and manipulate the content to reflect it accordingly --><div class="content"><p style="font-size: 25px;">
+    <div class="post-content"><!-- Parse internal links, external links, transclusions, etc. and manipulate the content to reflect it accordingly --><div class="content"><p class="site-section-title">
     <a>1.  Publications</a>
 </p>
 <!-- <label for="lmn-0" class="margin-toggle  ">&#8853;</label><input type="checkbox" id="lmn-0" class="margin-toggle"/><span class="mn-left">Drawing conclusions by connecting the dots between different stories.</span> -->
@@ -191,7 +279,7 @@
 
 <hr />
 
-<p style="font-size: 25px;">
+<p class="site-section-title">
     <a>2.  Experiences</a>
 </p>
 
@@ -211,7 +299,7 @@
 
 <hr />
 
-<p style="font-size: 25px;">
+<p class="site-section-title">
     <a>3.  Teaching, Academic Services, and Awards</a>
 </p>
 
@@ -222,7 +310,8 @@
 </ul>
 
 <hr />
-<p style="font-size: 25px;">
+
+<p class="site-section-title">
     <a>Miscellaneous</a>
 </p>
 
