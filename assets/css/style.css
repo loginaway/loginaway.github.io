@@ -17,9 +17,10 @@ html {
 
 body {
   font-family: 'Linux Libertine O', sans-serif;
+  /* font-size: 15pt; */
   min-height: 450px;
   counter-reset: sidenote-counter;
-  background-color: rgba(233, 250, 237, 0.509);;
+  /* background-color: rgba(233, 250, 237, 0.509);; */
 }
 
 .box {
@@ -1308,3 +1309,4 @@ figcaption {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+

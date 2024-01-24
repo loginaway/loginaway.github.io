@@ -116,7 +116,7 @@
 
                     <div id="content"><article class="post">
     
-    <div class="post-content"><!-- Parse internal links, external links, transclusions, etc. and manipulate the content to reflect it accordingly --><div class="content">Exploring the features of Enjoyment work;Comparison based on accomplishment does not have a baseline;
+    <div class="post-content"><!-- Parse internal links, external links, transclusions, etc. and manipulate the content to reflect it accordingly --><div class="content">Blogging about blogs;Exploring the features of Enjoyment work;Comparison based on accomplishment does not have a baseline;
 </div></div>
 </article></div>
                 </div>

@@ -1,1 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://jiayangcheng.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jiayangcheng.com/" rel="alternate" type="text/html" /><updated>2024-01-24T14:21:25+08:00</updated><id>https://jiayangcheng.com/feed.xml</id><title type="html">Jiayang Cheng</title></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://jiayangcheng.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jiayangcheng.com/" rel="alternate" type="text/html" /><updated>2024-01-24T16:45:02+08:00</updated><id>https://jiayangcheng.com/feed.xml</id><title type="html">Jiayang Cheng</title><entry><title type="html">Blogging about blogs</title><link href="https://jiayangcheng.com/posts/Blogging-about-blogs" rel="alternate" type="text/html" title="Blogging about blogs" /><published>2024-01-24T00:00:00+08:00</published><updated>2024-01-24T00:00:00+08:00</updated><id>https://jiayangcheng.com/posts/Blogging-about-blogs</id><content type="html" xml:base="https://jiayangcheng.com/posts/Blogging-about-blogs"><![CDATA[<!-- 
+Refer to https://edwardtufte.github.io/tufte-css/ for more info.
+
+
+[[]]   // add hyper links to other posts (with titles), non-existing links will be highlighted
+[[text ::https://edwardtufte.github.io/tufte-css/]] // add link to external websites
+
+[[text ::rmn]]  // put side notes
+[[text ::lmn]]
+[[text ::rsn]]  // put side citations (with an additional index 1, 2, ... in the original paragraph)
+[[text ::lsn]]
+[[text ::rmn-transclude]] // transclude a internal link to the side nodes by puting the title there.
+
+[[text ::highlight]] // highlight texts
+
+[[text ::src]] // put the text into a flash card
+ -->
+
+<h1 id="introduction">Introduction</h1>
+
+<p>hellow</p>
+<h2 id="what-to-cover">What to cover</h2>]]></content><author><name></name></author><category term="Post" /><category term="thoughts" /><summary type="html"><![CDATA[&lt;!– Refer to https://edwardtufte.github.io/tufte-css/ for more info.]]></summary></entry></feed>
